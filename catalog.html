@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Каталог</title>
+  <meta charset="UTF-8">
+  <title>Каталог</title>
 </head>
 <body>
 
@@ -101,7 +101,72 @@
 
 <main class="container">
 
+  <ul class="breadcrumbs">
+    <li class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">Главная</a>
+    </li>
+    <li class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">Каталог</a>
+    </li>
+    <li class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">Инструмент</a>
+    </li>
+    <li class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">Перфораторы</a>
+    </li>
+  </ul>
 
+  <h1 class="container__header">Каталог Техномарта</h1>
+
+  <section class="filters">
+    <h2 class="filters_hidden">Фильтр товаров</h2>
+    <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+      <fildset>
+        <legend class="filter-form__legend">Цена:</legend>
+        <input class="filter-form__input" type="range">
+        /* !!! */
+      </fildset>
+      <fildset>
+        <legend class="filter-form__legend">Производители:</legend>
+        <ul class="filter-form__list">
+          <li class="filter-form__list-item">
+            <input class="filter-form__list-input filter-form__list-input_checked" type="checkbox" name="Bosh">
+            <span class="filter-form__list-name">Bosh</span>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__list-input" type="checkbox" name="Интерскол">
+            <span class="filter-form__list-name">Интерскол</span>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__list-input filter-form__list-input_checked" type="checkbox" name="Makita">
+            <span class="filter-form__list-name">Makita</span>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__list-input" type="checkbox" name="DeWalt">
+            <span class="filter-form__list-name">DeWalt</span>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__list-input" type="checkbox" name="Hitachi">
+            <span class="filter-form__list-name">Hitachi</span>
+          </li>
+        </ul>
+      </fildset>
+      <fildset>
+        <legend class="filter-form__legend">Питание</legend>
+        <ul class="filter-form__list">
+          <li class="filter-form__list-item">
+            <input class="filter-form__list-input filter-form__list-input_checked" type="radio" name="Bosh">
+            <span class="filter-form__list-name">Bosh</span>
+          </li>
+          <li class="filter-form__list-item">
+            <input class="filter-form__list-input" type="radio" name="Интерскол">
+            <span class="filter-form__list-name">Интерскол</span>
+          </li>
+        </ul>
+      </fildset>
+      <button class="filter-form__button" type="submit">Показать</button>
+    </form>
+  </section>
 
 </main>
 
