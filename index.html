@@ -9,7 +9,9 @@
 <header class="header">
 
   <a class="header__logo">
-    <img class="header__logo-image" src="http://placehold.it/230x30" width="230" height="30" alt="Логотип Техномарт">
+    <div class="header__logo-image">
+      <img src="http://placehold.it/230x30" width="230" height="30" alt="Логотип Техномарт">
+    </div>
   </a>
 
   <form class="header__search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -90,228 +92,261 @@
 
   <h1 class="container__header visible--hidden">Техномарт</h1>
 
-  <section class="features">
-    <h2 class="features__title">Наши преимущества</h2>
-    <ul class="features__list">
-      <li class="features__item features__item--material features__item--new">
-        <h3 class="features__caption">Материалы</h3>
-        <a class="features__button" href="#">На любой вкус</a>
-        <img class="features__image" src="img/features/materials.svg" alt="Иконка материала">
+  <section class="container-features">
+    <h2 class="container-features__title visible--hidden">Наши преимущества</h2>
+
+    <ul class="container-features__slider-list">
+      <li class="container-features__slider-item">
+        <h3 class="container-features__slider-caption">Перфораторы</h3>
+        <p class="container-features__slider-description">Настоящие мужские игрушки</p>
+        <div class="container-features__slider-image">
+          <img src="http://placehold.it/550x220" alt="Изображение перфоратора">
+        </div>
+        <a class="container-features__slider-link" href="#">Открыть каталог</a>
       </li>
-      <li class="features__item">
-        <h3 class="features__caption">Материалы</h3>
-        <a class="features__button" href="#">На любой вкус</a>
-        <img class="features__image" src="img/features/materials.svg" alt="Иконка материала">
-      </li>
-      <li class="features__item">
-        <h3 class="features__caption">Материалы</h3>
-        <a class="features__button" href="#">На любой вкус</a>
-        <img class="features__image" src="img/features/materials.svg" alt="Иконка материала">
-      </li>
-      <li class="features__item">
-        <h3 class="features__caption">Материалы</h3>
-        <a class="features__button" href="#">На любой вкус</a>
-        <img class="features__image" src="img/features/materials.svg" alt="Иконка материала">
-      </li>
-      <li class="features__item">
-        <h3 class="features__caption">Материалы</h3>
-        <a class="features__button" href="#">На любой вкус</a>
-        <img class="features__image" src="img/features/materials.svg" alt="Иконка материала">
+      <li class="container-features__slider-item">
+        <h3 class="container-features__slider-caption">Дрели</h3>
+        <p class="container-features__slider-description">Соседям на радость!</p>
+        <div class="container-features__slider-image">
+          <img src="http://placehold.it/550x220" alt="Изображение дрели">
+        </div>
+        <a class="container-features__slider-link" href="#">Открыть каталог</a>
       </li>
     </ul>
 
-    <div class="slider">
-      <h2 class="slider__caption">Перфораторы</h2>
-      <p class="slider__description">Настоящие мужские игрушки</p>
-      <a class="slider__button" href="#">Открыть каталог</a>
-      <img class="slider__image" src="img/slider/perforator.jpg" alt="Иконка слайдера">
-    </div>
-    <div class="features__item materials">
-      <h3 class="features__caption">Материалы</h3>
-      <a class="features__button" href="#">На любой вкус</a>
-      <img class="features__image" src="img/features/materials.svg" alt="Иконка материала">
-    </div>
-    <div class="features__item tool">
-      <h3 class="features__caption">Инструмент</h3>
-      <a class="features__button" href="#">На все случаи</a>
-      <img class="features__image" src="img/features/tool.svg" alt="Иконка инструмента">
-    </div>
-    <div class="features__item technique">
-      <h3 class="features__caption">Техника</h3>
-      <a class="features__button" href="#">Для стройки</a>
-      <img class="features__image" src="img/features/technique.svg" alt="Иконка техники">
-    </div>
-    <div class="features__item discounts">
-      <h3 class="features__caption">Скидки 50%</h3>
-      <a class="features__button" href="#">На 350 товаров</a>
-      <img class="features__image" src="img/features/discounts.svg" alt="Иконка скидки">
-    </div>
-    <div class="features__item delivery">
-      <h3 class="features__caption">Доставка</h3>
-      <a class="features__button" href="#">Бесплатно</a>
-      <img class="features__image" src="img/features/delivery.svg" alt="Иконка доставки">
-    </div>
+    <ul class="container-features__list">
+      <li class="container-features__item container-features__item--materials container-features__item--new">
+        <p class="container-features__caption">Материалы</p>
+        <img class="container-features__image" src="http://placehold.it/240x110"
+             alt="Иконка материала">
+        <a class="container-features__button" href="#">На любой вкус</a>
+      </li>
+      <li class="container-features__item container-features__item--instrument">
+        <p class="container-features__caption">Инструмент</p>
+        <img class="container-features__image" src="http://placehold.it/240x110" alt="Иконка инструмента">
+        <a class="container-features__link" href="#">На все случаи</a>
+      </li>
+      <li class="container-features__item container-features__item--technique">
+        <p class="container-features__caption">Техника</p>
+        <img class="container-features__image" src="http://placehold.it/240x110" alt="Иконка техники">
+        <a class="container-features__link" href="#">Для стройки</a>
+      </li>
+      <li class="container-features__item container-features__item--discounts">
+        <p class="container-features__caption">Скидки 50%</p>
+        <img class="container-features__image" src="http://placehold.it/240x110" alt="Иконка скидки">
+        <a class="container-features__link" href="#">На 350 товаров</a>
+      </li>
+      <li class="container-features__item container-features__item--delivery">
+        <p class="container-features__caption">Доставка</p>
+        <img class="container-features__image" src="http://placehold.it/240x110" alt="Иконка доставки">
+        <a class="container-features__link" href="#">Бесплатно</a>
+      </li>
+    </ul>
   </section>
 
-  <section class="cat">
-    <div class="catalog__inner">
-      <h2 class="catalog__title">Каталог</h2>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <section class="product">
-            <h3 class="product__title">Перфоратор BOSH</h3>
-          </section>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="catalog">
-    <div class="catalog__inner">
-      <h2 class="catalog__title">Каталог</h2>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <section class="product">
-            <h3 class="product__title">Перфоратор BOSH</h3>
-          </section>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="popular-product">
-    <div class="popular-product__head-wrapper">
-      <h2 class="popular-product__title">Популярные товары:</h2>
+  <section class="popular_products">
+    <div class="popular_products__inner">
+      <h2 class="popular_products__title">Популярные товары:</h2>
       <a class="popular-product__link" href="#">Все популярные товары</a>
     </div>
-    <ul class="product-list">
-      <li class="product-list__item">
-        <img class="product-list__image" src="img/product-list/bosh-bfg-9000.jpg" alt="Перфоратор BOSH BFG 9000">
-        <p class="product-list__caption">Перфоратор BOSH</p>
-        <p class="product-list__model">BFG 9000</p>
-        <p class="product-list__old-price">32500 Р.</p>
-        <a class="product-list__link" href="#">
-          <span class="product-list__price">25500 Р.</span>
-        </a>
-      </li>
-      <li class="product-list__item">
-        <img class="product-list__image" src="img/product-list/bosh-bfg-3000.jpg" alt="Перфоратор BOSH BFG 3000">
-        <p class="product-list__caption">Перфоратор BOSH</p>
-        <p class="product-list__model">BFG 3000</p>
-        <p class="product-list__old-price">22500 Р.</p>
-        <a class="product-list__link" href="#">
-          <span class="product-list__price">15500 Р.</span>
-        </a>
-      </li>
-      <li class="product-list__item">
-        <img class="product-list__image" src="img/product-list/bosh-bfg-6000.jpg" alt="Перфоратор BOSH BFG 6000">
-        <p class="product-list__caption">Перфоратор BOSH</p>
-        <p class="product-list__model">BFG 6000</p>
-        <p class="product-list__old-price">30500 Р.</p>
-        <a class="product-list__link" href="#">
-          <span class="product-list__price">25500 Р.</span>
-        </a>
-      </li>
-      <li class="product-list__item">
-        <img class="product-list__image" src="img/product-list/bosh-bfg-2000.jpg" alt="Перфоратор BOSH BFG 2000">
-        <p class="product-list__caption">Перфоратор BOSH</p>
-        <p class="product-list__model">BFG 2000</p>
-        <p class="product-list__old-price product-list__old-price_hidden">12500 Р.</p>
-        <a class="product-list__link" href="#">
-          <span class="product-list__price">12500 Р.</span>
-        </a>
+
+    <ul class="popular_products__list">
+      <li class="popular_products__item">
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img class="product__image" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 9000">
+          </div>
+          <p class="product__model">BFG 9000</p>
+          <p class="product__old-price">32500 Р.</p>
+          <a class="product__link" href="#">
+            <span class="product__price">25500 Р.</span>
+          </a>
+        </section>
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img class="product-list__image" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 3000">
+          </div>
+          <p class="product-list__model">BFG 3000</p>
+          <p class="product-list__old-price">22500 Р.</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">15500 Р.</span>
+          </a>
+        </section>
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img class="product-list__image" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 6000">
+          </div>
+          <p class="product-list__model">BFG 6000</p>
+          <p class="product-list__old-price">30500 Р.</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">25500 Р.</span>
+          </a>
+        </section>
+        <section class="product product--new">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img class="product-list__image" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 2000">
+          </div>
+          <p class="product-list__model">BFG 2000</p>
+          <p class="product-list__old-price product-list__old-price_hidden">12500 Р.</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">12500 Р.</span>
+          </a>
+        </section>
       </li>
     </ul>
   </section>
 
   <section class="popular_manufacturer">
-    <div class="popular_manufacturer__caption">
-      <h2 class="popular_manufacturer__header">Популярные производители:</h2>
+    <div class="popular_products__inner">
+      <h2 class="popular_manufacturer__title">Популярные производители:</h2>
       <a class="popular_manufacturer__link" href="#">Все производители</a>
     </div>
-    <ul class="manufacturer-list">
-      <li class="manufacturer-list__item">
-        <h3 class="manufacturer-list__title">Bosh</h3>
-        <img class="manufacturer-list__image" src="img/manufacturer-list/bosh.jpg" alt="Bosh">
+
+    <ul class="popular_manufacturer__list">
+      <li class="popular_manufacturer__list-item">
+        <h3 class="popular_manufacturer__list-title">Bosh</h3>
+        <div class="popular_manufacturer__list-image">
+          <img src="http://placehold.it/150x100" alt="Bosh">
+        </div>
       </li>
-      <li class="manufacturer-list__item">
-        <img class="manufacturer-list__image" src="img/manufacturer-list/makita.jpg" alt="Makita">
+      <li class="popular_manufacturer__list-item">
+        <h3 class="popular_manufacturer__list-title">Makita</h3>
+        <div class="popular_manufacturer__list-image">
+          <img class="popular_manufacturer__list-image" src="http://placehold.it/150x100" alt="Makita">
+        </div>
       </li>
-      <li class="manufacturer-list__item">
-        <img class="manufacturer-list__image" src="img/manufacturer-list/dewalt.jpg" alt="DeWALT">
+      <li class="popular_manufacturer__list-item">
+        <h3 class="popular_manufacturer__list-title">DeWALT</h3>
+        <div class="popular_manufacturer__list-image">
+          <img class="popular_manufacturer__list-image" src="http://placehold.it/150x100" alt="DeWALT">
+        </div>
       </li>
-      <li class="manufacturer-list__item">
-        <img class="manufacturer-list__image" src="img/manufacturer-list/interskol.jpg" alt="Интерскол">
+      <li class="popular_manufacturer__list-item">
+        <h3 class="popular_manufacturer__list-title">Интерскол</h3>
+        <div class="popular_manufacturer__list-image">
+          <img class="popular_manufacturer__list-image" src="http://placehold.it/150x100" alt="Интерскол">
+        </div>
       </li>
-      <li class="manufacturer-list__item">
-        <img class="manufacturer-list__image" src="img/manufacturer-list/hitachi.jpg" alt="Hitachi">
+      <li class="popular_manufacturer__list-item">
+        <h3 class="popular_manufacturer__list-title">Hitachi</h3>
+        <div class="popular_manufacturer__list-image">
+          <img class="popular_manufacturer__list-image" src="http://placehold.it/150x100" alt="Hitachi">
+        </div>
       </li>
-      <li class="manufacturer-list__item">
-        <img class="manufacturer-list__image" src="img/manufacturer-list/lg.jpg" alt="LG">
+      <li class="popular_manufacturer__list-item">
+        <h3 class="popular_manufacturer__list-title">LG</h3>
+        <div class="popular_manufacturer__list-image">
+          <img class="popular_manufacturer__list-image" src="http://placehold.it/150x100" alt="LG">
+        </div>
       </li>
-      <li class="manufacturer-list__item">
-        <img class="manufacturer-list__image" src="img/manufacturer-list/aeg.jpg" alt="AEG">
+      <li class="popular_manufacturer__list-item">
+        <h3 class="popular_manufacturer__list-title">AEG</h3>
+        <div class="popular_manufacturer__list-image">
+          <img class="popular_manufacturer__list-image" src="http://placehold.it/150x100" alt="AEG">
+        </div>
       </li>
-      <li class="manufacturer-list__item">
-        <img class="manufacturer-list__image" src="img/manufacturer-list/metabo.jpg" alt="Metabo">
+      <li class="popular_manufacturer__list-item">
+        <h3 class="popular_manufacturer__list-title">Metabo</h3>
+        <div class="popular_manufacturer__list-image">
+          <img class="popular_manufacturer__list-image" src="http://placehold.it/150x100" alt="Metabo">
+        </div>
       </li>
     </ul>
   </section>
 
   <section class="services">
-    <h2 class="services__header">Сервисы</h2>
+    <h2 class="services__title">Сервисы</h2>
+
     <p class="services__description">
       Хороший интернет-магазин отличается от плохого не только ценами!<br>
       Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
     </p>
+
+    <ul class="services-menu">
+      <li class="services-menu__item">
+        <p class="services-menu__item-title">Доставка</p>
+      </li>
+      <li class="services-menu__item">
+        <p class="services-menu__item-title">Гарантия</p>
+      </li>
+      <li class="services-menu__item">
+        <p class="services-menu__item-title">Кредит</p>
+      </li>
+    </ul>
+
     <ul class="services-list">
       <li class="services-list__item">
-        <span class="services-list__caption">Доставка</span>
-        <h3 class="services-list__header">Доставка</h3>
-        <p class="services-list__description">
+        <h3 class="services-list__item-title">Доставка</h3>
+        <p class="services-list__item-description">
           Мы с удовольствием доставим ваш товар прямо<br>
           к вашему подъезду совершенно бесплатно!<br>
           Ведь мы неплохо заработаем,<br>
-          поднимая его на ваш этаж!<br>
+          поднимая его на ваш этаж!
         </p>
-        <img class="services-list__image" src="img/services/delivery.jpg" alt="Картинка доставки">
+        <div class="services-list__item-image">
+          <img src="http://placehold.it/250x200" alt="Картинка доставки">
+        </div>
       </li>
       <li class="services-list__item">
-        <span class="services-list__caption">Гарантия</span>
-        <h3 class="services-list__header">Гарантия</h3>
-        <p class="services-list__description">...</p>
-        <img class="services-list__image" src="img/services/guarantee.jpg" alt="Картинка гарантии">
+        <h3 class="services-list__item-title">Гарантия</h3>
+        <p class="services-list__item-description">
+          Если купленный у нас товар поломается или заискрит,<br>
+          а также в случае пожара, спровоцированного его возгаранием,<br>
+          вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+          сгоревший товар на новый.<br>
+          Дом уж восстановите как-нибудь сами.
+        </p>
+        <div class="services-list__item-image">
+          <img src="http://placehold.it/250x200" alt="Картинка гарантии">
+        </div>
       </li>
       <li class="services-list__item">
-        <span class="services-list__caption">Кредит</span>
-        <h3 class="services-list__header">Кредит</h3>
-        <p class="services-list__description">...</p>
-        <img class="services-list__image" src="img/services/credit.jpg" alt="Картинка кредита">
+        <h3 class="services-list__item-title">Кредит</h3>
+        <p class="services-list__item-description">
+          Залезть в долговую яму стало проще!<br>
+          Кредитные консультанты придут вам на помощь.
+        </p>
+        <div class="services-list__item-image">
+          <img src="http://placehold.it/250x200" alt="Картинка кредита">
+        </div>
       </li>
     </ul>
   </section>
 
   <section class="company">
-    <h2 class="company__header">Компания "Техномарт"</h2>
-    <p class="company__description company__description--padding-right">
+    <h2 class="company__title">Компания "Техномарт"</h2>
+
+    <p class="company__description company__description--padding-bottom">
       Настоящий мужской шоппинг начинается здесь!
       Огромный выбор товаров для ремонта и строительства
       не оставит равнодушными любителей сэкномить на гастарбайтерах.
     </p>
+
     <p class="company__description">
-      Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+      Мы можем доставить ваш товар в самые отдаленные точки России!
     </p>
-    Техномарт работает со многими транспортными компаниями:
-    <ul class="directions-list">
-      <li class="directions-list__item">
-        <span class="directions-list__caption">Деловые линии</span>
-      </li>
-      <li class="directions-list__item">
-        <span class="directions-list__caption">Автотрейдинг</span>
-      </li>
-      <li class="directions-list__item">
-        <span class="directions-list__caption">ЖелДорЭкспедиция</span>
-      </li>
-    </ul>
+
+    <div class="company-directions">
+      <p class="company-directions-title">
+        Техномарт работает со многими транспортными компаниями:
+      </p>
+      <ul class="company-directions-list">
+        <li class="company-directions-list__item">
+          <span class="company-directions-list__caption">Деловые линии</span>
+        </li>
+        <li class="company-directions-list__item">
+          <span class="company-directions-list__caption">Автотрейдинг</span>
+        </li>
+        <li class="company-directions-list__item">
+          <span class="company-directions-list__caption">ЖелДорЭкспедиция</span>
+        </li>
+      </ul>
+    </div>
+
     <a class="company__link" href="#">Подробнее о компании</a>
   </section>
 
