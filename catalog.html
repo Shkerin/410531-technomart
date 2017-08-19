@@ -8,94 +8,81 @@
 
 <header class="header">
 
-  <div class="layout-position_center">
+  <a class="header__logo" href="index.html">
+    <p class="header__logo-title">Техномарт</p>
+  </a>
 
-    <div class="layout-header_top">
+  <form class="header__search-form" action="https://echo.htmlacademy.ru" method="post">
+    <label class="header__search-form-label" for="search-form">Поиск:</label>
+    <input class="header__search-form-input" id="search-form" type="text" name="text">
+  </form>
 
-      <a class="header-logo">
-        <img class="header-logo__image" src="http://placehold.it/230x30" width="230" height="30"
-             alt="Логотип Техномарт">
-      </a>
-
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="search-form__label" for="search">Поиск:</label>
-        <input class="search-form__input" id="search" type="text" name="text">
-      </form>
-
-      <div class="bookmark">
-        <a class="bookmark-link" href="#">
-          <span>Закладки:</span>
-          <span class="bookmark-number">0</span>
-        </a>
-      </div>
-
-      <div class="basket">
-        <a class="basket-link" href="#">
-          <span>Корзина:</span>
-          <span class="basket-number">0</span>
-        </a>
-      </div>
-
-      <div class="order">
-        <a class="order-link" href="#">Оформить заказ</a>
-      </div>
-
-    </div>
-
-    <div class="layout-header_bottom">
-
-      <p class="description-site">
-        Интернет-магазин<br>
-        строительных материалов<br>
-        и инструментов для ремонта
-      </p>
-
-      <div class="header-contacts">
-        <p class="header-telephone">
-          +7 (812) 555-05-55
-        </p>
-        <p class="header-address">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
-      </div>
-
-      <ul class="user-ident">
-        <li class="user-ident__item">
-          <a class="user-ident__login-link" href="#">Войти</a>
-        </li>
-        <li class="user-ident__item">
-          <a class="user-ident__registration-link" href="#">Регистрация</a>
-        </li>
-      </ul>
-
-      <nav class="header-navigation">
-        <ul>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="index.html">Главная</a></li>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="company.html">Компания</a>
-          </li>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="news.html">Новости</a>
-          </li>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="special-offer.html">Спецпредложения</a>
-          </li>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="delivery.html">Доставка</a>
-          </li>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
-    </div>
-
+  <div class="header__bookmark">
+    <a class="header__bookmark-link" href="#">
+      <span>Закладки:</span>
+      <span class="header__bookmark-number">0</span>
+    </a>
   </div>
+
+  <div class="header__basket">
+    <a class="header__basket-link" href="#">
+      <span>Корзина:</span>
+      <span class="header__basket-number">0</span>
+    </a>
+  </div>
+
+  <div class="header__order">
+    <a class="header__order-link" href="#">Оформить заказ</a>
+  </div>
+
+  <p class="header__description-site">
+    Интернет-магазин<br>
+    строительных материалов<br>
+    и инструментов для ремонта
+  </p>
+
+  <div class="header__contacts">
+    <p class="header__contacts-telephone">
+      +7 (812) 555-05-55
+    </p>
+    <p class="header__contacts-address">
+      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+    </p>
+  </div>
+
+  <ul class="header__user-ident">
+    <li class="header__user-ident-item">
+      <a class="header__user-ident-link" href="#">Войти</a>
+    </li>
+    <li class="header__user-ident-item">
+      <a class="header__user-ident-link" href="#">Регистрация</a>
+    </li>
+  </ul>
+
+  <nav class="header__navigation">
+    <ul>
+      <li class="header__navigation-item">
+        <a class="header__navigation-link" href="index.html">Главная</a></li>
+      <li class="header__navigation-item">
+        <a class="header__navigation-link" href="company.html">Компания</a>
+      </li>
+      <li class="header__navigation-item">
+        <a class="header__navigation-link" href="catalog.html">Каталог</a>
+      </li>
+      <li class="header__navigation-item">
+        <a class="header__navigation-link" href="news.html">Новости</a>
+      </li>
+      <li class="header__navigation-item">
+        <a class="header__navigation-link" href="special-offer.html">Спецпредложения</a>
+      </li>
+      <li class="header__navigation-item">
+        <a class="header__navigation-link" href="delivery.html">Доставка</a>
+      </li>
+      <li class="header__navigation-item">
+        <a class="header__navigation-link" href="contacts.html">Контакты</a>
+      </li>
+    </ul>
+  </nav>
 
 </header>
 
@@ -103,173 +90,295 @@
 
   <ul class="breadcrumbs">
     <li class="breadcrumbs__item">
-      <a href="#" class="breadcrumbs__link">Главная</a>
+      <a class="breadcrumbs__link" href="#">Главная</a>
     </li>
     <li class="breadcrumbs__item">
-      <a href="#" class="breadcrumbs__link">Каталог</a>
+      <a class="breadcrumbs__link" href="#">Каталог</a>
     </li>
     <li class="breadcrumbs__item">
-      <a href="#" class="breadcrumbs__link">Инструмент</a>
+      <a class="breadcrumbs__link" href="#">Инструмент</a>
     </li>
     <li class="breadcrumbs__item">
-      <a href="#" class="breadcrumbs__link">Перфораторы</a>
+      <a class="breadcrumbs__link" href="#">Перфораторы</a>
     </li>
   </ul>
 
-  <h1 class="catalog__header">Каталог Техномарта</h1>
+  <h1 class="catalog__header">Перфораторы</h1>
 
-  <section class="catalog">
-    <div class="catalog__inner">
-      <h2 class="catalog__title">Каталог</h2>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <section class="product">
-            <h3 class="product__title">Перфоратор BOSH</h3>
-          </section>
-        </li>
-      </ul>
-    </div>
-  </section>
+  <section class="filter">
+    <h2 class="filter__header visible--hidden">Фильтр товаров</h2>
 
-  <section class="filters">
-    <h2 class="filters_hidden">Фильтр товаров</h2>
-    <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset>
-        <legend class="filter-form__legend">Цена:</legend>
-        <input class="filter-form__input" type="range">
-        <input type="text" class="type-text">
-        <input type="text" class="type-text">
+    <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="filter__fieldset">
+        <legend class="filter__legend">Цена:</legend>
+        <input class="filter__input-range" type="range">
+        <input class="filter__input-text" type="text" value="0">
+        <input class="filter__input-text" type="text" value="3000">
       </fieldset>
-      <fieldset>
-        <legend class="filter-form__legend">Производители:</legend>
-        <ul class="filter-form__list">
-          <li class="filter-form__list-item">
-            <input class="filter-form__list-input filter-form__list-input_checked" type="checkbox" name="Bosh">
-            <span class="filter-form__list-name">Bosh</span>
+
+      <fieldset class="filter__fieldset">
+        <legend class="filter__legend">Производители:</legend>
+        <ul class="filter__list">
+          <li class="filter__item">
+            <input class="filter__input-checkbox filter__input-checkbox--checked" type="checkbox" name="Bosh">
+            <span class="filter__name">Bosh</span>
           </li>
-          <li class="filter-form__list-item">
-            <input class="filter-form__list-input" type="checkbox" name="Интерскол">
-            <span class="filter-form__list-name">Интерскол</span>
+          <li class="filter__item">
+            <input class="filter__input-checkbox" type="checkbox" name="Интерскол">
+            <span class="filter__name">Интерскол</span>
           </li>
-          <li class="filter-form__list-item">
-            <input class="filter-form__list-input filter-form__list-input_checked" type="checkbox" name="Makita">
-            <span class="filter-form__list-name">Makita</span>
+          <li class="filter__item">
+            <input class="filter__input-checkbox filter__input-checkbox--checked" type="checkbox" name="Makita">
+            <span class="filter__name">Makita</span>
           </li>
-          <li class="filter-form__list-item">
-            <input class="filter-form__list-input" type="checkbox" name="DeWalt">
-            <span class="filter-form__list-name">DeWalt</span>
+          <li class="filter__item">
+            <input class="filter__input-checkbox" type="checkbox" name="DeWalt">
+            <span class="filter__name">DeWalt</span>
           </li>
-          <li class="filter-form__list-item">
-            <input class="filter-form__list-input" type="checkbox" name="Hitachi">
-            <span class="filter-form__list-name">Hitachi</span>
+          <li class="filter__item">
+            <input class="filter__input-checkbox" type="checkbox" name="Hitachi">
+            <span class="filter__name">Hitachi</span>
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend class="filter-form__legend">Питание</legend>
-        <ul class="filter-form__list">
-          <li class="filter-form__list-item">
-            <input class="filter-form__list-input filter-form__list-input_checked" type="radio" name="Bosh">
-            <span class="filter-form__list-name">Bosh</span>
+
+      <fieldset class="filter__fieldset">
+        <legend class="filter__legend">Питание</legend>
+        <ul class="filter__list">
+          <li class="filter__item">
+            <input class="filter__input-checkbox filter__input-checkbox--checked" type="radio" name="Bosh">
+            <span class="filter__name">Аккумуляторные</span>
           </li>
-          <li class="filter-form__list-item">
-            <input class="filter-form__list-input" type="radio" name="Интерскол">
-            <span class="filter-form__list-name">Интерскол</span>
+          <li class="filter__item">
+            <input class="filter__input-checkbox" type="radio" name="Интерскол">
+            <span class="filter__name">Сетевые</span>
           </li>
         </ul>
       </fieldset>
-      <button class="filter-form__button" type="submit">Показать</button>
+
+      <button class="filter__button" type="submit">Показать</button>
     </form>
   </section>
 
   <section class="catalog__list">
-    <div class="sort">
+    <div class="catalog__sort">
+      <h2 class="catalog__sort-title">Сортировка</h2>
 
-    </div>
-    <div class="pagination">
+      <ul class="catalog__sort-list">
+        <li class="catalog__sort-item catalog__sort-item--select">По цене</li>
+        <li class="catalog__sort-item">По типу</li>
+        <li class="catalog__sort-item">По функционалу</li>
+      </ul>
 
+      <button class="catalog__sort-button-up">Сортировка вверх</button>
+      <button class="catalog__sort-button-down">Сортировка вниз</button>
     </div>
+
+    <ul class="catalog__product-list">
+      <li class="catalog__item">
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 3000">
+          </div>
+          <p class="product-list__model">BFG 3000</p>
+          <p class="product-list__old-price">22500 Р.</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">15500 Р.</span>
+          </a>
+        </section>
+      </li>
+      <li class="catalog__item">
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 6000">
+          </div>
+          <p class="product-list__model">BFG 6000</p>
+          <p class="product-list__old-price">30500 Р.</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">25500 Р.</span>
+          </a>
+        </section>
+      </li>
+      <li class="catalog__item">
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <button class="catalog__button">Купить</button>
+          <button class="catalog__button">В закладки</button>
+          <p class="product-list__model">BFG 2000</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">12500 Р.</span>
+          </a>
+        </section>
+      </li>
+
+      <li class="catalog__item">
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 3000">
+          </div>
+          <p class="product-list__model">BFG 3000</p>
+          <p class="product-list__old-price">22500 Р.</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">15500 Р.</span>
+          </a>
+        </section>
+      </li>
+      <li class="catalog__item">
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 6000">
+          </div>
+          <p class="product-list__model">BFG 6000</p>
+          <p class="product-list__old-price">30500 Р.</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">25500 Р.</span>
+          </a>
+        </section>
+      </li>
+      <li class="catalog__item">
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 2000">
+          </div>
+          <p class="product-list__model">BFG 2000</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">12500 Р.</span>
+          </a>
+        </section>
+      </li>
+
+      <li class="catalog__item">
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 3000">
+          </div>
+          <p class="product-list__model">BFG 3000</p>
+          <p class="product-list__old-price">22500 Р.</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">15500 Р.</span>
+          </a>
+        </section>
+      </li>
+      <li class="catalog__item">
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 6000">
+          </div>
+          <p class="product-list__model">BFG 6000</p>
+          <p class="product-list__old-price">30500 Р.</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">25500 Р.</span>
+          </a>
+        </section>
+      </li>
+      <li class="catalog__item">
+        <section class="product">
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <div class="product__image">
+            <img src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 2000">
+          </div>
+          <p class="product-list__model">BFG 2000</p>
+          <a class="product-list__link" href="#">
+            <span class="product-list__price">12500 Р.</span>
+          </a>
+        </section>
+      </li>
+    </ul>
+
+    <ul class="catalog__pagination-list">
+      <li class="catalog__pagination-item">1</li>
+      <li class="catalog__pagination-item">2</li>
+      <li class="catalog__pagination-item">3</li>
+      <li class="catalog__pagination-item">Следующая</li>
+    </ul>
   </section>
 
 </main>
 
 <footer class="footer">
 
-  <div class="layout-position_center">
+  <div class="footer__inner-top">
+    <a class="footer__logo" href="index.html">
+      <p class="footer__logo-title">Техномарт</p>
+    </a>
 
-    <div class="layout-footer_top">
+    <p class="footer__contacts">
+      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+      +7 (812) 555-05-55
+    </p>
 
-      <a href="#" class="footer-logo">
-        <img class="footer-logo__image" src="http://placehold.it/230x40" alt="Логотип Техномарт">
-      </a>
-
-      <p class="footer-contacts">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        +7 (812) 555-05-55
-      </p>
-
-      <nav class="footer-navigation">
-        <ul>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="company.html">Компания</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="news.html">Новости</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="delivery.html">Доставка</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
-      <ul class="footer-features">
-        <li class="footer-features__item">
-          <a href="#" class="footer-features__link">Материалы</a>
+    <nav class="footer__navigation">
+      <ul>
+        <li class="footer__navigation__item">
+          <a class="footer__navigation__link" href="company.html">Компания</a>
         </li>
-        <li class="footer-features__item">
-          <a href="#" class="footer-features__link">Техника</a>
+        <li class="footer__navigation__item">
+          <a class="footer__navigation__link" href="news.html">Новости</a>
         </li>
-        <li class="footer-features__item">
-          <a href="#" class="footer-features__link">Инструмент</a>
+        <li class="footer__navigation__item">
+          <a class="footer__navigation__link" href="catalog.html">Каталог</a>
         </li>
-        <li class="footer-features__item">
-          <a href="#" class="footer-features__link">Спецпредложения</a>
+        <li class="footer__navigation__item">
+          <a class="footer__navigation__link" href="delivery.html">Доставка</a>
+        </li>
+        <li class="footer__navigation__item">
+          <a class="footer__navigation__link" href="contacts.html">Контакты</a>
         </li>
       </ul>
+    </nav>
 
-    </div>
+    <ul class="footer__features">
+      <li class="footer__features-item">
+        <a class="footer__features-link" href="#">Материалы</a>
+      </li>
+      <li class="footer__features-item">
+        <a class="footer__features-link" href="#">Техника</a>
+      </li>
+      <li class="footer__features-item">
+        <a class="footer__features-link" href="#">Инструмент</a>
+      </li>
+      <li class="footer__features-item">
+        <a class="footer__features-link" href="#">Спецпредложения</a>
+      </li>
+    </ul>
+  </div>
 
-    <div class="layout-footer_bottom">
+  <div class="footer__inner-bottom">
 
-      <p class="footer-copyright">
-        <span class="copyright">C</span>
-        2010-2016 Компания "Техномарт"<br>
-        Все права защищены
-      </p>
+    <p class="footer__copyright">
+      <span class="copyright">Copyright</span>
+      2010-2016 Компания "Техномарт"<br>
+      Все права защищены
+    </p>
 
-      <ul class="footer-social">
-        <li class="footer-social__item vk">Вконтакте</li>
-        <li class="footer-social__item fb">Фейсбук</li>
-        <li class="footer-social__item in">Инстаграм</li>
-      </ul>
+    <ul class="footer-social">
+      <li class="footer-social__item footer-social__item--vk">
+        <a class="social-link" href="#">Вконтакте</a>
+      </li>
+      <li class="footer-social__item footer-social__item--fb">
+        <a class="social-link" href="#">Фейсбук</a>
+      </li>
+      <li class="footer-social__item footer-social__item--ig">
+        <a class="social-link" href="#">Инстаграм</a>
+      </li>
+    </ul>
 
-      <p class="feedback">
-        Обратная связь<br>
-        <a href="#" class="feedback__link">mail@htmlacademy.ru</a>
-      </p>
+    <p class="footer__feedback">
+      Обратная связь<br>
+      <a href="#" class="footer__feedback-link">mail@htmlacademy.ru</a>
+    </p>
 
-      <p class="developed">
-        Разработано - <br>
-        <a href="#" class="developed__link">htmlacademy.ru</a>
-      </p>
-
-    </div>
+    <p class="footer__developed">
+      Разработано - <br>
+      <a href="#" class="footer__developed-link">htmlacademy.ru</a>
+    </p>
 
   </div>
 
