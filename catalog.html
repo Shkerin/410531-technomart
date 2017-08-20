@@ -88,94 +88,96 @@
 
 <main class="catalog">
 
-  <ul class="breadcrumbs">
-    <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link" href="#">Главная</a>
+  <ul class="catalog__breadcrumbs">
+    <li class="catalog__breadcrumbs-item">
+      <a class="catalog__breadcrumbs-link" href="#">Главная</a>
     </li>
-    <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link" href="#">Каталог</a>
+    <li class="catalog__breadcrumbs-item">
+      <a class="catalog__breadcrumbs-link" href="#">Каталог</a>
     </li>
-    <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link" href="#">Инструмент</a>
+    <li class="catalog__breadcrumbs-item">
+      <a class="catalog__breadcrumbs-link" href="#">Инструмент</a>
     </li>
-    <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link" href="#">Перфораторы</a>
+    <li class="catalog__breadcrumbs-item">
+      <a class="catalog__breadcrumbs-link" href="#">Перфораторы</a>
     </li>
   </ul>
 
-  <h1 class="catalog__header">Перфораторы</h1>
+  <h1 class="catalog__title">Перфораторы</h1>
 
-  <section class="filter">
-    <h2 class="filter__header filter__header--hidden">Фильтр товаров</h2>
+  <section class="catalog__filter">
+    <h2 class="catalog__filter-title">Фильтр</h2>
 
-    <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset class="filter__fieldset">
-        <legend class="filter__legend">Цена:</legend>
-        <input class="filter__input-range" type="range">
-        <input class="filter__input-text" type="text" value="0">
-        <input class="filter__input-text" type="text" value="3000">
+    <form class="catalog__filter-form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="catalog__filter-fieldset">
+        <legend class="catalog__filter-legend">Цена:</legend>
+        <input class="catalog__filter-input-range" type="range">
+        <input class="catalog__filter-input-text" type="text" value="0">
+        <input class="catalog__filter-input-text" type="text" value="3000">
       </fieldset>
 
-      <fieldset class="filter__fieldset">
-        <legend class="filter__legend">Производители:</legend>
-        <ul class="filter__list">
-          <li class="filter__item">
-            <input class="filter__input-checkbox filter__input-checkbox--checked" type="checkbox" name="Bosh">
-            <span class="filter__name">Bosh</span>
+      <fieldset class="catalog__filter-fieldset">
+        <legend class="catalog__filter-legend">Производители:</legend>
+        <ul class="catalog__filter-list">
+          <li class="catalog__filter-item">
+            <input class="catalog__filter-input-checkbox catalog__filter-input-checkbox--checked" type="checkbox" name="Bosh">
+            <span class="catalog__filter-name">Bosh</span>
           </li>
-          <li class="filter__item">
-            <input class="filter__input-checkbox" type="checkbox" name="Интерскол">
-            <span class="filter__name">Интерскол</span>
+          <li class="catalog__filter-item">
+            <input class="catalog__filter-input-checkbox" type="checkbox" name="Интерскол">
+            <span class="catalog__filter-name">Интерскол</span>
           </li>
-          <li class="filter__item">
-            <input class="filter__input-checkbox filter__input-checkbox--checked" type="checkbox" name="Makita">
-            <span class="filter__name">Makita</span>
+          <li class="catalog__filter-item">
+            <input class="catalog__filter-input-checkbox catalog__filter-input-checkbox--checked" type="checkbox" name="Makita">
+            <span class="catalog__filter-name">Makita</span>
           </li>
-          <li class="filter__item">
-            <input class="filter__input-checkbox" type="checkbox" name="DeWalt">
-            <span class="filter__name">DeWalt</span>
+          <li class="catalog__filter-item">
+            <input class="catalog__filter-input-checkbox" type="checkbox" name="DeWalt">
+            <span class="catalog__filter-name">DeWalt</span>
           </li>
-          <li class="filter__item">
-            <input class="filter__input-checkbox" type="checkbox" name="Hitachi">
-            <span class="filter__name">Hitachi</span>
+          <li class="catalog__filter-item">
+            <input class="catalog__filter-input-checkbox" type="checkbox" name="Hitachi">
+            <span class="catalog__filter-name">Hitachi</span>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="filter__fieldset">
-        <legend class="filter__legend">Питание</legend>
-        <ul class="filter__list">
-          <li class="filter__item">
-            <input class="filter__input-checkbox filter__input-checkbox--checked" type="radio" name="Bosh">
-            <span class="filter__name">Аккумуляторные</span>
+      <fieldset class="catalog__filter-fieldset">
+        <legend class="catalog__filter-legend">Питание</legend>
+        <ul class="catalog__filter-list">
+          <li class="catalog__filter-item">
+            <input class="catalog__filter-input-radio catalog__filter-input-radio--checked" type="radio" name="Bosh">
+            <span class="catalog__filter-name">Аккумуляторные</span>
           </li>
-          <li class="filter__item">
-            <input class="filter__input-checkbox" type="radio" name="Интерскол">
-            <span class="filter__name">Сетевые</span>
+          <li class="catalog__filter-item">
+            <input class="catalog__filter-input-radio" type="radio" name="Интерскол">
+            <span class="catalog__filter-name">Сетевые</span>
           </li>
         </ul>
       </fieldset>
 
-      <button class="filter__button" type="submit">Показать</button>
+      <button class="catalog__filter-button" type="submit">Показать</button>
     </form>
   </section>
 
   <section class="catalog__list">
+    <h2 class="catalog__list-title catalog__list-title--hidden">Каталог товаров</h2>
+
     <div class="catalog__sort">
-      <h2 class="catalog__sort-title">Сортировка</h2>
+      <h3 class="catalog__sort-title">Сортировка</h3>
 
       <ul class="catalog__sort-list">
-        <li class="catalog__sort-item catalog__sort-item--select">По цене</li>
-        <li class="catalog__sort-item">По типу</li>
-        <li class="catalog__sort-item">По функционалу</li>
+        <li class="catalog__sort-list-item catalog__sort-list-item--selected">По цене</li>
+        <li class="catalog__sort-list-item">По типу</li>
+        <li class="catalog__sort-list-item">По функционалу</li>
       </ul>
 
       <button class="catalog__sort-button-up">Сортировка вверх</button>
       <button class="catalog__sort-button-down">Сортировка вниз</button>
     </div>
 
-    <ul class="catalog__product-list">
-      <li class="catalog__item">
+    <ul class="products-list">
+      <li class="products-list__item">
         <section class="product">
           <h3 class="product__title">Перфоратор BOSH</h3>
           <div class="product__image">
@@ -292,12 +294,25 @@
       </li>
     </ul>
 
-    <ul class="catalog__pagination-list">
-      <li class="catalog__pagination-item">1</li>
-      <li class="catalog__pagination-item">2</li>
-      <li class="catalog__pagination-item">3</li>
-      <li class="catalog__pagination-item">Следующая</li>
+    <ul class="catalog__list-pagination-list">
+      <li class="catalog__list-pagination-item">1</li>
+      <li class="catalog__list-pagination-item">2</li>
+      <li class="catalog__list-pagination-item">3</li>
+      <li class="catalog__list-pagination-item">Следующая</li>
     </ul>
+  </section>
+
+  <section class="catalog__couple-words">
+    <h2 class="catalog__couple-words-title">Пара слов о перфораторах</h2>
+
+    <p class="catalog__couple-words-description">
+      Перфоратор — универсальный строительный инструмент.
+      Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+      Существуют электромеханические и пневматические перфораторы.
+      Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+      В ассортиментном ряду есть выбор «трехрежимников»:
+      в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+    </p>
   </section>
 
 </main>
