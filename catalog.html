@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -111,7 +112,8 @@
     <form class="catalog__filter-form" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="catalog__filter-fieldset">
         <legend class="catalog__filter-legend">Цена:</legend>
-        <input class="catalog__filter-input-range" type="range">
+        <div class="catalog__filter-range-start">Начальный ползунок</div>
+        <div class="catalog__filter-range-stop">Конечный ползунок</div>
         <input class="catalog__filter-input-text" type="text" value="0">
         <input class="catalog__filter-input-text" type="text" value="3000">
       </fieldset>
@@ -167,9 +169,15 @@
       <h3 class="catalog__sort-title">Сортировка</h3>
 
       <ul class="catalog__sort-list">
-        <li class="catalog__sort-list-item catalog__sort-list-item--selected">По цене</li>
-        <li class="catalog__sort-list-item">По типу</li>
-        <li class="catalog__sort-list-item">По функционалу</li>
+        <li class="catalog__sort-list-item catalog__sort-list-item--selected">
+          <a class="catalog__sort-list-link" href="#">По цене</a>
+        </li>
+        <li class="catalog__sort-list-item">
+          <a class="catalog__sort-list-link" href="#">По типу</a>
+        </li>
+        <li class="catalog__sort-list-item">
+          <a class="catalog__sort-list-link" href="#">По функционалу</a>
+        </li>
       </ul>
 
       <button class="catalog__sort-button-up">Сортировка вверх</button>

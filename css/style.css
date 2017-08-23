@@ -1,0 +1,62 @@
+.body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #000;
+}
+
+/*** index.html ***/
+
+.popular-products__title,
+.popular-manufacturer__title {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #3d546e;
+}
+
+.services__title,
+.company__title,
+.contacts__title {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.services__list-title {
+  font-family: "Cuprum", sans-serif;
+  font-size: 36px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #3d546e;
+}
+
+/*** catalog.html ***/
+
+.catalog__title {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.catalog__filter-title,
+.catalog__sort-title {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.catalog__couple-words-title {
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.product__title {
+  font-size: 18px;
+  line-height: 20px;
+}
