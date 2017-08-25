@@ -89,18 +89,18 @@
 
 <main class="catalog">
 
-  <ul class="catalog__breadcrumbs">
-    <li class="catalog__breadcrumbs-item">
-      <a class="catalog__breadcrumbs-link" href="#">Главная</a>
+  <ul class="breadcrumbs">
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link" href="#">Главная</a>
     </li>
-    <li class="catalog__breadcrumbs-item">
-      <a class="catalog__breadcrumbs-link" href="#">Каталог</a>
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link" href="#">Каталог</a>
     </li>
-    <li class="catalog__breadcrumbs-item">
-      <a class="catalog__breadcrumbs-link" href="#">Инструмент</a>
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link" href="#">Инструмент</a>
     </li>
-    <li class="catalog__breadcrumbs-item">
-      <a class="catalog__breadcrumbs-link" href="#">Перфораторы</a>
+    <li class="breadcrumbs-item">
+      <a class="breadcrumbs-link" href="#">Перфораторы</a>
     </li>
   </ul>
 
@@ -164,21 +164,21 @@
     </form>
   </section>
 
-  <section class="catalog__list">
-    <h2 class="catalog__list-title catalog__list-title--hidden">Каталог товаров</h2>
+  <section class="catalog__sheet">
+    <h2 class="catalog__sheet-title catalog__sheet-title--hidden">Каталог товаров</h2>
 
-    <div class="catalog__sort">
-      <h3 class="catalog__sort-title">Сортировка</h3>
+    <div class="catalog__sheet-sort-wrapper">
+      <h3 class="catalog__sheet-sort-title">Сортировка</h3>
 
-      <ul class="catalog__sort-list">
-        <li class="catalog__sort-list-item catalog__sort-list-item--selected">
-          <a class="catalog__sort-list-link" href="#">По цене</a>
+      <ul class="catalog__sheet-sort-list">
+        <li class="catalog__sheet-sort-item catalog__sheet-sort-item--selected">
+          <a class="catalog__sheet-sort-link" href="#">По цене</a>
         </li>
-        <li class="catalog__sort-list-item">
-          <a class="catalog__sort-list-link" href="#">По типу</a>
+        <li class="catalog__sheet-sort-item">
+          <a class="catalog__sheet-sort-link" href="#">По типу</a>
         </li>
-        <li class="catalog__sort-list-item">
-          <a class="catalog__sort-list-link" href="#">По функционалу</a>
+        <li class="catalog__sheet-sort-item">
+          <a class="catalog__sheet-sort-link" href="#">По функционалу</a>
         </li>
       </ul>
 
@@ -193,6 +193,8 @@
           <div class="product__image">
             <img src="img/content/products/bfg-3000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 3000">
           </div>
+          <button class="product__button">Купить</button>
+          <button class="product__button">В закладки</button>
           <p class="product__model">BFG 3000</p>
           <p class="product__old-price">22500 Р.</p>
           <a class="product__link" href="#">
@@ -200,12 +202,14 @@
           </a>
         </section>
       </li>
-      <li class="catalog__item">
+      <li class="products-list__item">
         <section class="product">
           <h3 class="product__title">Перфоратор BOSH</h3>
           <div class="product__image">
             <img src="img/content/products/bfg-6000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 6000">
           </div>
+          <button class="product__button">Купить</button>
+          <button class="product__button">В закладки</button>
           <p class="product__model">BFG 6000</p>
           <p class="product__old-price">30500 Р.</p>
           <a class="product__link" href="#">
@@ -213,11 +217,14 @@
           </a>
         </section>
       </li>
-      <li class="catalog__item">
+      <li class="products-list__item">
         <section class="product">
           <h3 class="product__title">Перфоратор BOSH</h3>
-          <button class="catalog__button">Купить</button>
-          <button class="catalog__button">В закладки</button>
+          <div class="product__image">
+            <img src="img/content/products/bfg-2000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 2000">
+          </div>
+          <button class="product__button">Купить</button>
+          <button class="product__button">В закладки</button>
           <p class="product__model">BFG 2000</p>
           <a class="product__link" href="#">
             <span class="product__price">12500 Р.</span>
@@ -225,12 +232,14 @@
         </section>
       </li>
 
-      <li class="catalog__item">
+      <li class="products-list__item">
         <section class="product">
           <h3 class="product__title">Перфоратор BOSH</h3>
           <div class="product__image">
             <img src="img/content/products/bfg-3000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 3000">
           </div>
+          <button class="product__button">Купить</button>
+          <button class="product__button">В закладки</button>
           <p class="product__model">BFG 3000</p>
           <p class="product__old-price">22500 Р.</p>
           <a class="product__link" href="#">
@@ -238,12 +247,14 @@
           </a>
         </section>
       </li>
-      <li class="catalog__item">
+      <li class="products-list__item">
         <section class="product">
           <h3 class="product__title">Перфоратор BOSH</h3>
           <div class="product__image">
             <img src="img/content/products/bfg-6000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 6000">
           </div>
+          <button class="product__button">Купить</button>
+          <button class="product__button">В закладки</button>
           <p class="product__model">BFG 6000</p>
           <p class="product__old-price">30500 Р.</p>
           <a class="product__link" href="#">
@@ -251,12 +262,14 @@
           </a>
         </section>
       </li>
-      <li class="catalog__item">
+      <li class="products-list__item">
         <section class="product">
           <h3 class="product__title">Перфоратор BOSH</h3>
           <div class="product__image">
             <img src="img/content/products/bfg-2000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 2000">
           </div>
+          <button class="product__button">Купить</button>
+          <button class="product__button">В закладки</button>
           <p class="product__model">BFG 2000</p>
           <a class="product__link" href="#">
             <span class="product__price">12500 Р.</span>
@@ -264,12 +277,14 @@
         </section>
       </li>
 
-      <li class="catalog__item">
+      <li class="products-list__item">
         <section class="product">
           <h3 class="product__title">Перфоратор BOSH</h3>
           <div class="product__image">
             <img src="img/content/products/bfg-3000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 3000">
           </div>
+          <button class="product__button">Купить</button>
+          <button class="product__button">В закладки</button>
           <p class="product__model">BFG 3000</p>
           <p class="product__old-price">22500 Р.</p>
           <a class="product__link" href="#">
@@ -277,12 +292,14 @@
           </a>
         </section>
       </li>
-      <li class="catalog__item">
+      <li class="products-list__item">
         <section class="product">
           <h3 class="product__title">Перфоратор BOSH</h3>
           <div class="product__image">
             <img src="img/content/products/bfg-6000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 6000">
           </div>
+          <button class="product__button">Купить</button>
+          <button class="product__button">В закладки</button>
           <p class="product__model">BFG 6000</p>
           <p class="product__old-price">30500 Р.</p>
           <a class="product__link" href="#">
@@ -290,12 +307,14 @@
           </a>
         </section>
       </li>
-      <li class="catalog__item">
+      <li class="products-list__item">
         <section class="product">
           <h3 class="product__title">Перфоратор BOSH</h3>
           <div class="product__image">
             <img src="img/content/products/bfg-2000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 2000">
           </div>
+          <button class="product__button">Купить</button>
+          <button class="product__button">В закладки</button>
           <p class="product__model">BFG 2000</p>
           <a class="product__link" href="#">
             <span class="product__price">12500 Р.</span>
@@ -304,12 +323,14 @@
       </li>
     </ul>
 
-    <ul class="catalog__list-pagination-list">
-      <li class="catalog__list-pagination-item">1</li>
-      <li class="catalog__list-pagination-item">2</li>
-      <li class="catalog__list-pagination-item">3</li>
-      <li class="catalog__list-pagination-item">Следующая</li>
-    </ul>
+    <div class="catalog__pagination">
+        <ul class="catalog__pagination-list">
+          <li class="catalog__pagination-item">1</li>
+          <li class="catalog__pagination-item">2</li>
+          <li class="catalog__pagination-item">3</li>
+          <li class="catalog__pagination-item">Следующая</li>
+        </ul>
+    </div>
   </section>
 
   <section class="catalog__couple-words">
