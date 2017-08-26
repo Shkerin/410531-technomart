@@ -112,36 +112,36 @@
     <form class="catalog__filter-form" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="catalog__filter-fieldset">
         <legend class="catalog__filter-legend">Цена:</legend>
-        <div class="catalog__filter-range-start">Начальный ползунок</div>
-        <div class="catalog__filter-range-stop">Конечный ползунок</div>
-        <input class="catalog__filter-input-text" type="text" value="0">
-        <input class="catalog__filter-input-text" type="text" value="3000">
+        <label class="catalog__filter-label-range" for="range-start">Начальный ползунок</label>
+        <input class="catalog__filter-input-range" id="range-start" type="text" value="0">
+        <label class="catalog__filter-label-range" for="range-stop">Конечный ползунок</label>
+        <input class="catalog__filter-input-range" id="range-stop" type="text" value="3000">
       </fieldset>
 
       <fieldset class="catalog__filter-fieldset">
         <legend class="catalog__filter-legend">Производители:</legend>
         <ul class="catalog__filter-list">
           <li class="catalog__filter-item">
-            <input class="catalog__filter-input-checkbox catalog__filter-input-checkbox--checked" type="checkbox"
-                   name="Bosh">
-            <span class="catalog__filter-name">Bosh</span>
+            <input class="catalog__filter-input-checkbox catalog__filter-input-checkbox--checked" id="filter-bosh"
+                   type="checkbox" name="Bosh">
+            <label class="catalog__filter-label-checkbox" for="filter-bosh">Bosh</label>
           </li>
           <li class="catalog__filter-item">
-            <input class="catalog__filter-input-checkbox" type="checkbox" name="Интерскол">
-            <span class="catalog__filter-name">Интерскол</span>
+            <input class="catalog__filter-input-checkbox" id="filter-interscol" type="checkbox" name="Интерскол">
+            <label class="catalog__filter-label-checkbox" for="filter-interscol">Интерскол</label>
           </li>
           <li class="catalog__filter-item">
-            <input class="catalog__filter-input-checkbox catalog__filter-input-checkbox--checked" type="checkbox"
-                   name="Makita">
-            <span class="catalog__filter-name">Makita</span>
+            <input class="catalog__filter-input-checkbox catalog__filter-input-checkbox--checked" id="filter-makita"
+                   type="checkbox" name="Makita">
+            <label class="catalog__filter-label-checkbox" for="filter-makita">Makita</label>
           </li>
           <li class="catalog__filter-item">
-            <input class="catalog__filter-input-checkbox" type="checkbox" name="DeWalt">
-            <span class="catalog__filter-name">DeWalt</span>
+            <input class="catalog__filter-input-checkbox" id="filter-dewalt" type="checkbox" name="DeWalt">
+            <label class="catalog__filter-label-checkbox" for="filter-dewalt">DeWalt</label>
           </li>
           <li class="catalog__filter-item">
-            <input class="catalog__filter-input-checkbox" type="checkbox" name="Hitachi">
-            <span class="catalog__filter-name">Hitachi</span>
+            <input class="catalog__filter-input-checkbox" id="filter-hitachi" type="checkbox" name="Hitachi">
+            <label class="catalog__filter-label-checkbox" for="filter-hitachi">Hitachi</label>
           </li>
         </ul>
       </fieldset>
@@ -150,12 +150,13 @@
         <legend class="catalog__filter-legend">Питание</legend>
         <ul class="catalog__filter-list">
           <li class="catalog__filter-item">
-            <input class="catalog__filter-input-radio catalog__filter-input-radio--checked" type="radio" name="Bosh">
-            <span class="catalog__filter-name">Аккумуляторные</span>
+            <input class="catalog__filter-input-radio catalog__filter-input-radio--checked" id="filter-battery"
+                   type="radio" name="Bosh">
+            <label class="catalog__filter-label-radio" for="filter-battery">Аккумуляторные</label>
           </li>
           <li class="catalog__filter-item">
-            <input class="catalog__filter-input-radio" type="radio" name="Интерскол">
-            <span class="catalog__filter-name">Сетевые</span>
+            <input class="catalog__filter-input-radio" id="filter-network" type="radio" name="Интерскол">
+            <label class="catalog__filter-label-radio" for="filter-network">Сетевые</label>
           </li>
         </ul>
       </fieldset>
@@ -324,12 +325,20 @@
     </ul>
 
     <div class="catalog__pagination">
-        <ul class="catalog__pagination-list">
-          <li class="catalog__pagination-item">1</li>
-          <li class="catalog__pagination-item">2</li>
-          <li class="catalog__pagination-item">3</li>
-          <li class="catalog__pagination-item">Следующая</li>
-        </ul>
+      <ul class="catalog__pagination-list">
+        <li class="catalog__pagination-item">
+          <a class="catalog__pagination-link" href="#">1</a>
+        </li>
+        <li class="catalog__pagination-item">
+          <a class="catalog__pagination-link" href="#">2</a>
+        </li>
+        <li class="catalog__pagination-item">
+          <a class="catalog__pagination-link" href="#">3</a>
+        </li>
+        <li class="catalog__pagination-item">
+          <a class="catalog__pagination-link" href="#">Следующая</a>
+        </li>
+      </ul>
     </div>
   </section>
 
