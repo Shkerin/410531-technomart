@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&amp;subset=cyrillic"-->
+  <!--rel="stylesheet">-->
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -10,81 +12,79 @@
 
 <header class="header">
 
-  <a class="header__logo" href="index.html">
-    <p class="header__logo-title">ТЕХНОМАРТ</p>
-  </a>
+  <div class="header__wrapper-top">
+    <a class="header__logo-link" href="index.html">ТЕХНОМАРТ</a>
 
-  <form class="header__search-form" action="https://echo.htmlacademy.ru" method="post">
-    <label class="header__search-form-label" for="search-form">Поиск:</label>
-    <input class="header__search-form-input" id="search-form" type="text" name="text">
-  </form>
+    <form class="header__search" action="https://echo.htmlacademy.ru" method="post">
+      <label class="header__search-label header__search-label--hidden" for="search-form">Поиск:</label>
+      <input class="header__search-input" id="search-form" type="text" name="text" value="Поиск:">
+    </form>
 
-  <div class="header__bookmark">
     <a class="header__bookmark-link" href="#">
       <span>Закладки:</span>
       <span class="header__bookmark-number">0</span>
     </a>
-  </div>
 
-  <div class="header__basket">
     <a class="header__basket-link" href="#">
       <span>Корзина:</span>
       <span class="header__basket-number">0</span>
     </a>
-  </div>
 
-  <div class="header__order">
     <a class="header__order-link" href="#">Оформить заказ</a>
   </div>
 
-  <p class="header__description-site">
-    Интернет-магазин<br>
-    строительных материалов<br>
-    и инструментов для ремонта
-  </p>
-
-  <div class="header__contacts">
-    <p class="header__contacts-telephone">
-      +7 (812) 555-05-55
+  <div class="header__wrapper-middle">
+    <p class="header__description-site">
+      Интернет-магазин<br>
+      строительных материалов<br>
+      и инструментов для ремонта
     </p>
-    <p class="header__contacts-address">
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-    </p>
-  </div>
 
-  <ul class="header__user-ident">
-    <li class="header__user-ident-item">
-      <a class="header__user-ident-link" href="#">Войти</a>
-    </li>
-    <li class="header__user-ident-item">
-      <a class="header__user-ident-link" href="#">Регистрация</a>
-    </li>
-  </ul>
+    <div class="header__contacts">
+      <p class="header__contacts-telephone">
+        +7 (812) 555-05-55
+      </p>
+      <p class="header__contacts-address">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </p>
+    </div>
 
-  <nav class="header__navigation">
-    <ul>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="index.html">Главная</a></li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="company.html">Компания</a>
+    <ul class="header__user-ident-list">
+      <li class="header__user-ident-item">
+        <a class="header__user-ident-link" href="#">Войти</a>
       </li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="catalog.html">Каталог</a>
-      </li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="news.html">Новости</a>
-      </li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="special-offer.html">Спецпредложения</a>
-      </li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="delivery.html">Доставка</a>
-      </li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="contacts.html">Контакты</a>
+      <li class="header__user-ident-item">
+        <a class="header__user-ident-link" href="#">Регистрация</a>
       </li>
     </ul>
-  </nav>
+  </div>
+
+  <div class="header__wrapper-bottom">
+    <nav class="header__navigation">
+      <ul class="header__navigation-list">
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="index.html">Главная</a></li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="company.html">Компания</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="news.html">Новости</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="special-offer.html">Спецпредложения</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="delivery.html">Доставка</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
 </header>
 
@@ -102,7 +102,9 @@
         <div class="features__slider-image">
           <img src="img/content/slider-1.jpg" width="550" height="220" alt="Изображение перфоратора">
         </div>
-        <a class="features__slider-link" href="catalog.html">Открыть каталог</a>
+        <a class="features__slider-link" href="catalog.html">
+          <div class="features__slider-button">Открыть каталог</div>
+        </a>
       </li>
       <li class="features__slider-item">
         <h3 class="features__slider-caption">Дрели</h3>
@@ -110,7 +112,9 @@
         <div class="features__slider-image">
           <img src="img/content/slider-2.jpg" width="550" height="220" alt="Изображение дрели">
         </div>
-        <a class="features__slider-link" href="catalog.html">Открыть каталог</a>
+        <a class="features__slider-link" href="catalog.html">
+          <div class="features__slider-button">Открыть каталог</div>
+        </a>
       </li>
     </ul>
 
@@ -127,27 +131,37 @@
       <li class="features__item features__item--materials features__item--new">
         <p class="features__caption">Материалы</p>
         <img class="features__image" src="img/decorative/icon-1.svg" width="44" height="65" alt="Иконка материала">
-        <a class="features__button" href="#">На любой вкус</a>
+        <a class="features__link" href="#">
+          <div class="features__button">На любой вкус</div>
+        </a>
       </li>
       <li class="features__item features__item--instrument">
         <p class="features__caption">Инструмент</p>
         <img class="features__image" src=img/decorative/icon-2.svg width="75" height="61" alt="Иконка инструмента">
-        <a class="features__link" href="#">На все случаи</a>
+        <a class="features__link" href="#">
+          <div class="features__button">На все случаи</div>
+        </a>
       </li>
       <li class="features__item features__item--technique">
         <p class="features__caption">Техника</p>
         <img class="features__image" src=img/decorative/icon-3.svg width="78" height="62" alt="Иконка техники">
-        <a class="features__link" href="#">Для стройки</a>
+        <a class="features__link" href="#">
+          <div class="features__button">Для стройки</div>
+        </a>
       </li>
       <li class="features__item features__item--discounts">
         <p class="features__caption">Скидки 50%</p>
         <img class="features__image" src=img/decorative/icon-4.svg width="59" height="72" alt="Иконка скидки">
-        <a class="features__link" href="#">На 350 товаров</a>
+        <a class="features__link" href="#">
+          <div class="features__button">На 350 товаров</div>
+        </a>
       </li>
       <li class="features__item features__item--delivery">
         <p class="features__caption">Доставка</p>
         <img class="features__image" src=img/decorative/icon-5.svg width="78" height="63" alt="Иконка доставки">
-        <a class="features__link" href="#">Бесплатно</a>
+        <a class="features__link" href="#">
+          <div class="features__button">Бесплатно</div>
+        </a>
       </li>
     </ul>
   </section>
@@ -414,21 +428,21 @@
     </p>
 
     <nav class="footer__navigation">
-      <ul>
-        <li class="footer__navigation__item">
-          <a class="footer__navigation__link" href="company.html">Компания</a>
+      <ul class="footer__navigation-list">
+        <li class="footer__navigation-item">
+          <a class="footer__navigation-link" href="company.html">Компания</a>
         </li>
-        <li class="footer__navigation__item">
-          <a class="footer__navigation__link" href="news.html">Новости</a>
+        <li class="footer__navigation-item">
+          <a class="footer__navigation-link" href="news.html">Новости</a>
         </li>
-        <li class="footer__navigation__item">
-          <a class="footer__navigation__link" href="catalog.html">Каталог</a>
+        <li class="footer__navigation-item">
+          <a class="footer__navigation-link" href="catalog.html">Каталог</a>
         </li>
-        <li class="footer__navigation__item">
-          <a class="footer__navigation__link" href="delivery.html">Доставка</a>
+        <li class="footer__navigation-item">
+          <a class="footer__navigation-link" href="delivery.html">Доставка</a>
         </li>
-        <li class="footer__navigation__item">
-          <a class="footer__navigation__link" href="contacts.html">Контакты</a>
+        <li class="footer__navigation-item">
+          <a class="footer__navigation-link" href="contacts.html">Контакты</a>
         </li>
       </ul>
     </nav>
