@@ -1,0 +1,7 @@
+{
+  "name": "410531-technomart",
+  "version": "0.0.1",
+  "dependencies": {
+    "stylelint": "^8.0.0"
+  }
+}
