@@ -10,81 +10,79 @@
 
 <header class="header">
 
-  <a class="header__logo" href="index.html">
-    <p class="header__logo-title">ТЕХНОМАРТ</p>
-  </a>
+  <div class="header__wrapper-top">
+    <a class="header__logo-link" href="index.html">ТЕХНОМАРТ</a>
 
-  <form class="header__search-form" action="https://echo.htmlacademy.ru" method="post">
-    <label class="header__search-form-label" for="search-form">Поиск:</label>
-    <input class="header__search-form-input" id="search-form" type="text" name="text">
-  </form>
+    <form class="header__search" action="https://echo.htmlacademy.ru" method="post">
+      <input class="header__search-input" id="search-form" type="text" name="text">
+      <label class="header__search-label" for="search-form">Поиск:</label>
+    </form>
 
-  <div class="header__bookmark">
     <a class="header__bookmark-link" href="#">
       <span>Закладки:</span>
       <span class="header__bookmark-number">0</span>
     </a>
-  </div>
 
-  <div class="header__basket">
     <a class="header__basket-link" href="#">
       <span>Корзина:</span>
       <span class="header__basket-number">0</span>
     </a>
-  </div>
 
-  <div class="header__order">
     <a class="header__order-link" href="#">Оформить заказ</a>
   </div>
 
-  <p class="header__description-site">
-    Интернет-магазин<br>
-    строительных материалов<br>
-    и инструментов для ремонта
-  </p>
-
-  <div class="header__contacts">
-    <p class="header__contacts-telephone">
-      +7 (812) 555-05-55
+  <div class="header__wrapper-middle">
+    <p class="header__description-site">
+      Интернет-магазин<br>
+      строительных материалов<br>
+      и инструментов для ремонта
     </p>
-    <p class="header__contacts-address">
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-    </p>
-  </div>
 
-  <ul class="header__user-ident">
-    <li class="header__user-ident-item">
-      <a class="header__user-ident-link" href="#">Войти</a>
-    </li>
-    <li class="header__user-ident-item">
-      <a class="header__user-ident-link" href="#">Регистрация</a>
-    </li>
-  </ul>
+    <div class="header__contacts">
+      <p class="header__contacts-telephone">
+        +7 (812) 555-05-55
+      </p>
+      <p class="header__contacts-address">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </p>
+    </div>
 
-  <nav class="header__navigation">
-    <ul>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="index.html">Главная</a></li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="company.html">Компания</a>
+    <ul class="header__user-ident-list">
+      <li class="header__user-ident-item">
+        <a class="header__user-ident-link" href="#">Войти</a>
       </li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="catalog.html">Каталог</a>
-      </li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="news.html">Новости</a>
-      </li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="special-offer.html">Спецпредложения</a>
-      </li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="delivery.html">Доставка</a>
-      </li>
-      <li class="header__navigation-item">
-        <a class="header__navigation-link" href="contacts.html">Контакты</a>
+      <li class="header__user-ident-item">
+        <a class="header__user-ident-link" href="#">Регистрация</a>
       </li>
     </ul>
-  </nav>
+  </div>
+
+  <div class="header__wrapper-bottom">
+    <nav class="header__navigation">
+      <ul class="header__navigation-list">
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="index.html">Главная</a></li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="company.html">Компания</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="news.html">Новости</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="special-offer.html">Спецпредложения</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="delivery.html">Доставка</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
 </header>
 
@@ -130,7 +128,7 @@
           </li>
           <li class="catalog__filter-item">
             <label class="label-checkbox">
-              <input class="input-checkbox" type="checkbox" name="Интерскол">
+              <input class="input-checkbox " type="checkbox" name="Интерскол">
               Интерскол
             </label>
           </li>
@@ -141,7 +139,7 @@
             </label>
           </li>
           <li class="catalog__filter-item">
-            <label class="label-checkbox">
+            <label class="label-checkbox label-checkbox--disabled">
               <input class="input-checkbox" type="checkbox" name="DeWalt">
               DeWalt
             </label>
@@ -159,14 +157,16 @@
         <legend class="catalog__filter-legend">Питание</legend>
         <ul class="catalog__filter-list">
           <li class="catalog__filter-item">
-            <input class="input-radio input-radio--checked" id="filter-battery" type="radio"
-                   name="power" value="battery">
-            <label class="label-radio" for="filter-battery">Аккумуляторные</label>
+            <label class="label-radio label-radio--disabled">
+              <input class="input-radio input-radio--checked" type="radio" name="power" value="battery">
+              Аккумуляторные
+            </label>
           </li>
           <li class="catalog__filter-item">
-            <input class="input-radio" id="filter-network" type="radio"
-                   name="power" value="network">
-            <label class="label-radio" for="filter-network">Сетевые</label>
+            <label class="label-radio">
+              <input class="input-radio" type="radio" name="power" value="network">
+              Сетевые
+            </label>
           </li>
         </ul>
       </fieldset>
@@ -204,8 +204,8 @@
           <div class="product__image">
             <img src="img/content/products/bfg-3000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 3000">
           </div>
-          <button class="product__button">Купить</button>
-          <button class="product__button">В закладки</button>
+          <button class="product__button-buy">Купить</button>
+          <button class="product__button-bookmark">В закладки</button>
           <p class="product__model">BFG 3000</p>
           <p class="product__old-price">22500 Р.</p>
           <a class="product__link" href="#">
@@ -219,8 +219,8 @@
           <div class="product__image">
             <img src="img/content/products/bfg-6000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 6000">
           </div>
-          <button class="product__button">Купить</button>
-          <button class="product__button">В закладки</button>
+          <button class="product__button-buy">Купить</button>
+          <button class="product__button-bookmark">В закладки</button>
           <p class="product__model">BFG 6000</p>
           <p class="product__old-price">30500 Р.</p>
           <a class="product__link" href="#">
@@ -234,8 +234,8 @@
           <div class="product__image">
             <img src="img/content/products/bfg-2000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 2000">
           </div>
-          <button class="product__button">Купить</button>
-          <button class="product__button">В закладки</button>
+          <button class="product__button-buy">Купить</button>
+          <button class="product__button-bookmark">В закладки</button>
           <p class="product__model">BFG 2000</p>
           <a class="product__link" href="#">
             <span class="product__price">12500 Р.</span>
@@ -249,8 +249,8 @@
           <div class="product__image">
             <img src="img/content/products/bfg-3000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 3000">
           </div>
-          <button class="product__button">Купить</button>
-          <button class="product__button">В закладки</button>
+          <button class="product__button-buy">Купить</button>
+          <button class="product__button-bookmark">В закладки</button>
           <p class="product__model">BFG 3000</p>
           <p class="product__old-price">22500 Р.</p>
           <a class="product__link" href="#">
@@ -264,8 +264,8 @@
           <div class="product__image">
             <img src="img/content/products/bfg-6000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 6000">
           </div>
-          <button class="product__button">Купить</button>
-          <button class="product__button">В закладки</button>
+          <button class="product__button-buy">Купить</button>
+          <button class="product__button-bookmark">В закладки</button>
           <p class="product__model">BFG 6000</p>
           <p class="product__old-price">30500 Р.</p>
           <a class="product__link" href="#">
@@ -279,8 +279,8 @@
           <div class="product__image">
             <img src="img/content/products/bfg-2000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 2000">
           </div>
-          <button class="product__button">Купить</button>
-          <button class="product__button">В закладки</button>
+          <button class="product__button-buy">Купить</button>
+          <button class="product__button-bookmark">В закладки</button>
           <p class="product__model">BFG 2000</p>
           <a class="product__link" href="#">
             <span class="product__price">12500 Р.</span>
@@ -294,8 +294,8 @@
           <div class="product__image">
             <img src="img/content/products/bfg-3000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 3000">
           </div>
-          <button class="product__button">Купить</button>
-          <button class="product__button">В закладки</button>
+          <button class="product__button-buy">Купить</button>
+          <button class="product__button-bookmark">В закладки</button>
           <p class="product__model">BFG 3000</p>
           <p class="product__old-price">22500 Р.</p>
           <a class="product__link" href="#">
@@ -309,8 +309,8 @@
           <div class="product__image">
             <img src="img/content/products/bfg-6000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 6000">
           </div>
-          <button class="product__button">Купить</button>
-          <button class="product__button">В закладки</button>
+          <button class="product__button-buy">Купить</button>
+          <button class="product__button-bookmark">В закладки</button>
           <p class="product__model">BFG 6000</p>
           <p class="product__old-price">30500 Р.</p>
           <a class="product__link" href="#">
@@ -324,8 +324,8 @@
           <div class="product__image">
             <img src="img/content/products/bfg-2000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 2000">
           </div>
-          <button class="product__button">Купить</button>
-          <button class="product__button">В закладки</button>
+          <button class="product__button-buy">Купить</button>
+          <button class="product__button-bookmark">В закладки</button>
           <p class="product__model">BFG 2000</p>
           <a class="product__link" href="#">
             <span class="product__price">12500 Р.</span>
@@ -337,7 +337,7 @@
     <div class="catalog__pagination">
       <ul class="catalog__pagination-list">
         <li class="catalog__pagination-item">
-          <a class="catalog__pagination-link" href="#">1</a>
+          <a class="catalog__pagination-link catalog__pagination-link--selected" href="#">1</a>
         </li>
         <li class="catalog__pagination-item">
           <a class="catalog__pagination-link" href="#">2</a>
@@ -370,9 +370,7 @@
 <footer class="footer">
 
   <div class="footer__inner-top">
-    <a class="footer__logo" href="index.html">
-      <p class="footer__logo-title">Техномарт</p>
-    </a>
+    <a class="footer__logo-link" href="index.html">Техномарт</a>
 
     <p class="footer__contacts">
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -380,21 +378,21 @@
     </p>
 
     <nav class="footer__navigation">
-      <ul>
-        <li class="footer__navigation__item">
-          <a class="footer__navigation__link" href="company.html">Компания</a>
+      <ul class="footer__navigation-list">
+        <li class="footer__navigation-item">
+          <a class="footer__navigation-link" href="company.html">Компания</a>
         </li>
-        <li class="footer__navigation__item">
-          <a class="footer__navigation__link" href="news.html">Новости</a>
+        <li class="footer__navigation-item">
+          <a class="footer__navigation-link" href="news.html">Новости</a>
         </li>
-        <li class="footer__navigation__item">
-          <a class="footer__navigation__link" href="catalog.html">Каталог</a>
+        <li class="footer__navigation-item">
+          <a class="footer__navigation-link" href="catalog.html">Каталог</a>
         </li>
-        <li class="footer__navigation__item">
-          <a class="footer__navigation__link" href="delivery.html">Доставка</a>
+        <li class="footer__navigation-item">
+          <a class="footer__navigation-link" href="delivery.html">Доставка</a>
         </li>
-        <li class="footer__navigation__item">
-          <a class="footer__navigation__link" href="contacts.html">Контакты</a>
+        <li class="footer__navigation-item">
+          <a class="footer__navigation-link" href="contacts.html">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -424,25 +422,31 @@
     </p>
 
     <ul class="footer-social">
-      <li class="footer-social__item footer-social__item--vk">
-        <a class="social-link" href="#">Вконтакте</a>
+      <li class="footer-social__item">
+        <a class="social-link social-link--vk" href="#">
+          <span class="social-link__title social-link__title--hidden">Вконтакте</span>
+        </a>
       </li>
-      <li class="footer-social__item footer-social__item--fb">
-        <a class="social-link" href="#">Фейсбук</a>
+      <li class="footer-social__item">
+        <a class="social-link social-link--fb" href="#">
+          <span class="social-link__title social-link__title--hidden">Фейсбук</span>
+        </a>
       </li>
-      <li class="footer-social__item footer-social__item--ig">
-        <a class="social-link" href="#">Инстаграм</a>
+      <li class="footer-social__item">
+        <a class="social-link social-link--insta" href="#">
+          <span class="social-link__title social-link__title--hidden">Инстаграмм</span>
+        </a>
       </li>
     </ul>
 
     <p class="footer__feedback">
       Обратная связь<br>
-      <a href="#" class="footer__feedback-link">mail@htmlacademy.ru</a>
+      <a class="footer__feedback-link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </p>
 
     <p class="footer__developed">
       Разработано - <br>
-      <a href="#" class="footer__developed-link">htmlacademy.ru</a>
+      <a class="footer__developed-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
     </p>
 
   </div>
