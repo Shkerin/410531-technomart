@@ -676,10 +676,12 @@ img {
 
 .breadcrumbs-item {
   display: inline-block;
-  padding: 10px 10px;
 }
 
 .breadcrumbs-link {
+  display: block;
+  padding: 10px 10px;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: inherit;
   line-height: inherit;
