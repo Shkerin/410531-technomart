@@ -57,22 +57,34 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*** general styles ***/
 
 .header__user-ident-list,
 .header__navigation-list,
 .features__slider-list,
+.features__slider-switches,
 .features__list,
 .popular-products__list,
 .popular-manufacturer__list,
+.services__menu,
 .services__list,
 .company__directions-list,
 .footer__navigation-list,
-.services__menu,
+.footer__features,
+.footer-social,
+.breadcrumbs,
 .catalog__filter-list,
 .catalog__sheet-sort-list,
 .products-list,
 .catalog__pagination-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -177,6 +189,8 @@ a {
 }
 
 .header__description-site {
+  margin: 0;
+
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -184,6 +198,7 @@ a {
 }
 
 .header__contacts-telephone {
+  margin: 0;
   width: 150px;
   padding: 10px 50px;
 
@@ -195,6 +210,8 @@ a {
 }
 
 .header__contacts-address {
+  margin: 0;
+
   font-size: 14px;
   line-height: 24px;
   color: #3d546e;
@@ -262,12 +279,17 @@ a {
 }
 
 .features__slider-caption {
+  margin: 0;
+
   font-size: 36px;
+  font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .features__slider-description {
+  margin: 0;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -333,6 +355,8 @@ a {
 }
 
 .features__caption {
+  margin: 0;
+
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -366,7 +390,10 @@ a {
 
 .popular-products__title,
 .popular-manufacturer__title {
+  margin: 0;
+
   font-size: 30px;
+  font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
   color: #3d546e;
@@ -391,17 +418,32 @@ a {
   border: 1px solid #eaeaea;
 }
 
-.product,
-.product__title {
+.product {
   font-size: 18px;
   line-height: 20px;
   color: inherit;
+}
+
+.product__title {
+  margin: 0;
+
+  font-size: inherit;
+  font-weight: normal;
+  line-height: inherit;
+}
+
+.product__model {
+  margin: 0;
 }
 
 .product__old-price,
 .product__link {
   font-size: 17px;
   line-height: 18px;
+}
+
+.product__old-price {
+  margin: 0;
 }
 
 .product__old-price {
@@ -424,20 +466,28 @@ a {
 .services__title,
 .company__title,
 .contacts__title {
+  margin: 0;
+
   font-size: 30px;
+  font-weight: normal;
   line-height: 24px;
   text-transform: uppercase;
 }
 
 .services__description,
 .services__list-description,
-.company__description,
+.company__directions-title,
 .contacts__description {
+  margin: 0;
+
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .services__list-title {
+  margin: 0;
+
   font-size: 36px;
+  font-weight: normal;
   line-height: 24px;
   text-transform: uppercase;
   color: #3d546e;
@@ -503,6 +553,8 @@ a {
 }
 
 .footer__contacts {
+  margin: 0;
+
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -545,6 +597,8 @@ a {
 }
 
 .footer__copyright {
+  margin: 0;
+
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -586,6 +640,8 @@ a {
 
 .footer__feedback,
 .footer__developed {
+  margin: 0;
+
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -632,9 +688,11 @@ a {
 }
 
 .catalog__title {
+  margin: 0;
   padding: 30px 30px;
 
   font-size: 30px;
+  font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
@@ -643,9 +701,11 @@ a {
 }
 
 .catalog__filter-title {
+  margin: 0;
   padding: 15px 15px;
 
   font-size: inherit;
+  font-weight: normal;
   line-height: inherit;
   text-transform: uppercase;
 
@@ -653,6 +713,8 @@ a {
 }
 
 .catalog__filter-fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -678,7 +740,7 @@ a {
 }
 
 .catalog__filter-item {
-  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .label-checkbox,
@@ -716,8 +778,11 @@ a {
 }
 
 .catalog__sheet-sort-title {
+  margin: 0;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: inherit;
+  font-weight: normal;
   line-height: inherit;
   text-transform: uppercase;
 }
@@ -808,7 +873,7 @@ a {
   display: block;
   padding: 5px 15px;
 
-  font-family:"PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   text-transform: uppercase;
@@ -835,6 +900,8 @@ a {
 }
 
 .catalog__couple-words-title {
+  margin: 0;
+
   font-size: 30px;
   font-weight: normal;
   line-height: 24px;
@@ -843,6 +910,8 @@ a {
 }
 
 .catalog__couple-words-description {
+  margin: 0;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
