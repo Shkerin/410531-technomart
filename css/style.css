@@ -129,7 +129,7 @@ img {
 
   font-family: inherit;
   font-size: 17px;
-  line-height: normal;
+  line-height: 18px;
   color: #ffffff;
 
   background-color: #33445a;
@@ -150,7 +150,7 @@ img {
   padding: 10px 20px;
 
   font-size: 17px;
-  line-height: normal;
+  line-height: 18px;
   color: inherit;
 }
 
@@ -172,7 +172,7 @@ img {
   padding: 10px 20px;
 
   font-size: 17px;
-  line-height: normal;
+  line-height: 18px;
   color: inherit;
 
   background-color: #6db254;
@@ -318,7 +318,7 @@ img {
   padding: 10px 40px;
 
   font-size: 14px;
-  line-height: normal;
+  line-height: 18px;
   text-transform: uppercase;
   color: inherit;
 
