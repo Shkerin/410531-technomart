@@ -72,169 +72,313 @@ body {
 
 body {
   /* Временно для сеток */
-  background-image: url("../img/technomart-index.jpg");
-  background-size: 1200px auto;
-  background-repeat: no-repeat;
-  background-position: top center;
+  /*background-image: url("../img/technomart-index.jpg");*/
+  /*background-size: 1200px auto;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: top center;*/
 }
 
 .container {
+  position: relative;
+
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
 .header {
-  margin-bottom: 59px;
-
-  background-color: #f3f7f9;
-
-  /* Временно для сеток */
   min-height: 320px;
-  background-color: transparent;
+  margin-bottom: 60px;
+
+  color: #ffffff;
+  background-color: #f3f7f9;
 }
 
 .header__wrapper-top {
   width: 100%;
+  min-height: 42px;
   margin-bottom: 46px;
 
   background-color: #33445a;
-
-  /* Временно для сеток */
-  background-color: transparent;
 }
 
 .header__wrapper-top .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .header__logo-link {
-  width: 220px;
-  height: 42px;
+  position: absolute;
+
+  width: 110px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 55px;
+  padding-right: 55px;
+
+  font-size: 24px;
+  line-height: 24px;
+  color: inherit;
+
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.header__logo-link:hover,
+.header__logo-link:focus {
+  background-color: #ca2c37;
+}
+
+.header__logo-link:active {
+  background-color: #ba2732;
 }
 
 .header__search {
-  width: 270px;
-  height: 42px;
+  position: relative;
 
+  margin-left: 220px;
 }
 
 .header__search-input {
-  width: 250px;
-  height: 40px;
+  position: static;
+
+  width: 225px;
+  padding: 12px 10px;
+  padding-left: 45px;
+
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #33445a;
+
+  border: none;
 }
 
-.header__bookmark-link {
-  width: 140px;
-  height: 42px;
+.header__search-input:active,
+.header__search-input:focus {
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
+.header__search-label {
+  position: absolute;
+  top: 12px;
+  left: 47px;
+
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.header__bookmark-link,
 .header__basket-link {
-  width: 140px;
-  height: 42px;
+  padding: 12px 35px;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: inherit;
+}
+
+.header__bookmark-link:hover,
+.header__bookmark-link:focus,
+.header__basket-link:hover,
+.header__basket-link:focus {
+  background-color: #212a3a;
+}
+
+.header__bookmark-link:active,
+.header__basket-link:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
 }
 
 .header__order-link {
-  width: 150px;
-  height: 42px;
+  padding: 12px 21px;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: inherit;
+
+  background-color: #6db254;
+}
+
+.header__order-link:hover,
+.header__order-link:focus {
+  background-color: #5fbb2d;
+}
+
+.header__order-link:active {
+  color: rgba(255, 255, 255, 0.51);
+  background-color: #518534;
 }
 
 .header__wrapper-middle {
-  margin-bottom: 42px;
+  margin-bottom: 34px;
 }
 
 .header__wrapper-middle .container {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
 .header__description-site {
   width: 215px;
-  height: 68px;
   margin: 0;
   margin-left: 45px;
+  padding: 3px 7px;
+
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ff5357;
 }
 
 .header__contacts {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 
-  width: 270px;
-  height: 70px;
+  margin-left: 46px;
 }
 
 .header__contacts-telephone {
-  width: 272px;
-  height: 47px;
   margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 72px;
+  padding-right: 46px;
+
+  font-size: 21px;
+  line-height: 18px;
+  color: #fb463c;
+
+  border: 3px solid #ffffff;
 }
 
 .header__contacts-address {
-  width: 272px;
-  height: 26px;
   margin: 0;
+  padding: 5px 10px;
+  padding-right: 5px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #3d546e;
 }
 
 .header__user-ident-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
 
-  width: 281px;
-  height: 45px;
   margin: 0;
+  margin-top: 13px;
+  margin-left: 70px;
   padding: 0;
 
   list-style: none;
 }
 
-.header__user-ident-item:first-child .header__user-ident-link {
-  display: block;
+.header__user-ident-link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
 
-  width: 121px;
-  height: 45px;
+  font-size: 21px;
+  line-height: 18px;
+
+  background-color: #ffffff;
+}
+
+.header__user-ident-link:hover,
+.header__user-ident-link:focus {
+  color: #ee3643;
+}
+
+.header__user-ident-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header__user-ident-item:first-child .header__user-ident-link {
+  padding-left: 47px;
 }
 
 .header__user-ident-item:last-child .header__user-ident-link {
-  display: block;
-
-  width: 150px;
-  height: 45px;
+  margin-left: 10px;
 }
 
 .header__wrapper-bottom {
   margin-bottom: 60px;
 }
 
-.header__navigation {
-  width: 940px;
-}
-
 .header__navigation-list {
   display: flex;
-  /*justify-content: space-around;*/
+  justify-content: center;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
+  background-color: #3d546e;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.header__navigation-item .header__navigation-link {
+.header__navigation-link {
   display: block;
+  padding-top: 20px;
+  padding-bottom: 23px;
+  padding-left: 30px;
+  padding-right: 30px;
 
-  width: 120px;
-  height: 60px;
-  margin-left: 10px;
-
-  /*time*/
-  outline: 2px solid blue;
+  font-size: 17px;
+  line-height: 17px;
+  color: inherit;
 }
 
+.header__navigation-link:hover,
+.header__navigation-link:focus {
+  background-color: #1d2739;
+}
+
+.header__navigation-link:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+main.container {
+  /* temp */
+  min-height: 1330px;
+}
+
+.features {
+  /* temp */
+  min-height: 410px;
+}
+
+.slider-inner {
+  width: 620px;
+  overflow: hidden;
+}
+
+.features__slider-list {
+  width: 1240px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* temp */
+  min-height: 266px;
+}
+
+.features__slider-item {
+  float: left;
+  width: 620px;
+  height: 266px;
+}
 
 
 
