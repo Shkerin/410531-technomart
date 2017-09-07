@@ -120,7 +120,7 @@ body {
   color: inherit;
 
   background-color: #ee3643;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
 .header__logo-link:hover,
@@ -322,7 +322,7 @@ body {
 
   list-style: none;
   background-color: #3d546e;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
 .header__navigation-link {
@@ -485,12 +485,7 @@ main.container {
   margin-bottom: 20px;
 }
 
-.features .features__list:last-child {
-  /*time*/
-  min-height: 266px;
-}
-
-.features__list-item-left {
+.features__list-item:first-child {
   width: 620px;
   overflow: hidden;
 }
@@ -535,7 +530,7 @@ main.container {
   font-size: 18px;
   line-height: 24px;
 
-  /*box-shadow: 2px 0 0 rgba(255, 255, 255, 0.4);*/
+  /*box-shadow: 2px 0 0 0 rgba(255, 255, 255, 0.4);*/
 }
 
 .features__slider-image img {
@@ -704,6 +699,10 @@ main.container {
   background: #ff0000;
 }
 
+.popular-manufacturer {
+  margin-bottom: 65px;
+}
+
 .popular-manufacturer__list {
   display: flex;
   justify-content: space-between;
@@ -711,15 +710,12 @@ main.container {
   flex-wrap: wrap;
 
   margin: 0;
-  margin-bottom: 66px;
   padding: 0;
 
   list-style: none;
 }
 
 .popular-manufacturer__item {
-  min-width: 220px;
-  min-height: 145px;
   margin-bottom: 20px;
 }
 
@@ -728,18 +724,208 @@ main.container {
   justify-content: center;
   align-items: center;
 
-  width: 220px;
-  height: 145px;
+  width: 218px;
+  height: 143px;
   margin: 0;
   padding: 0;
 }
 
 .services {
+  margin-bottom: 82px;
+  padding-top: 68px;
+
   background-color: #f4f8f9;
+}
+
+.services__title,
+.company__title,
+.contacts__title {
+  margin: 0;
+
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.services__title {
+  display: block;
+
+  margin-bottom: 30px;
+}
+
+.services__description,
+.services__list-description,
+.company__directions-title,
+.contacts__description {
+  margin: 0;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.services__description {
+  margin-bottom: 68px;
+}
+
+.services__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  min-height: 284px;
+}
+
+.services__menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services__menu-item {
+  width: 240px;
+  height: 60px;
+}
+
+.services__menu-button {
+  position: relative;
+
+  width: 240px;
+  height: 60px;
+  padding: 0;
+
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #3d546e;
+  border: none;
+  box-shadow: inset 0 1px 0 0 #405069,
+  0 1px 0 0 #293449;
+}
+
+.services__menu-button:hover,
+.services__menu-button:focus {
+  color: #ffffff;
+
+  background-color: #32425c;
+  box-shadow: inset 0 1px 0 0 #405069,
+  0 1px 0 0 #293449;
+}
+
+.services__menu-button--selected {
+  color: #3d546e;
+
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 0 0 #ffffff,
+  0 1px 0 0 #ffffff;
+}
+
+.services__menu-content {
+  position: absolute;
+  top: 13px;
+  left: 22px;
+}
+
+.services__list {
+  position: relative;
+
+  min-height: 280px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services__list {
+  width: 620px;
+}
+
+.services__list-title {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #3d546e;
+}
+
+.services__list-description {
+  margin-bottom: 35px;
+}
+
+.services__list-image {
+  position: absolute;
+  top: 23px;
+  right: 1px;
+}
+
+.services__list-image img {
+  vertical-align: bottom;
+}
+
+.main-content__wrapper-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 
   /*temp*/
-  min-height: 523px;
+  min-width: 940px;
+  min-height: 370px;
 }
+
+.company {
+  width: 520px;
+}
+
+.contacts {
+  width: 300px;
+}
+
+.company__link,
+.contacts__link {
+  display: block;
+  padding: 10px 35px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #ff5357;
+}
+
+.contacts__image img {
+  vertical-align: bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
