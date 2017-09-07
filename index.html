@@ -5,7 +5,7 @@
   <title>HTML Academy: Техномарт</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <!--<link href="css/outline.css" rel="stylesheet">-->
+  <link href="css/outline.css" rel="stylesheet">
 </head>
 <body>
 
@@ -100,7 +100,7 @@
   <section class="features">
     <!--<h2 class="features__title features__title&#45;&#45;hidden">Наши преимущества</h2>-->
 
-    <ul class="features__list ">
+    <ul class="features__list">
       <li class="features__item features__item--materials features__item--new">
         <p class="features__caption">Материалы</p>
         <img class="features__image" src="img/decorative/icon-1.svg" width="44" height="65" alt="Иконка материала">
@@ -119,36 +119,181 @@
     </ul>
 
     <ul class="features__list">
-      <!--<ul class="features__slider-list">-->
-        <!--<li class="features__slider-item">-->
-          <!--<h3 class="features__slider-caption">Перфораторы</h3>-->
-          <!--<p class="features__slider-description">Настоящие мужские игрушки</p>-->
-          <!--<div class="features__slider-image">-->
-            <!--<img src="img/content/slider-1.jpg" width="550" height="220" alt="Изображение перфоратора">-->
-          <!--</div>-->
-          <!--<a class="features__slider-link" href="catalog.html">Открыть каталог</a>-->
-        <!--</li>-->
-        <!--<li class="features__slider-item">-->
-          <!--<h3 class="features__slider-caption">Дрели</h3>-->
-          <!--<p class="features__slider-description">Соседям на радость!</p>-->
-          <!--<div class="features__slider-image">-->
-            <!--<img src="img/content/slider-2.jpg" width="550" height="220" alt="Изображение дрели">-->
-          <!--</div>-->
-          <!--<a class="features__slider-link" href="catalog.html">Открыть каталог</a>-->
-        <!--</li>-->
-      <!--</ul>-->
-      <!---->
-      <!--<li class="features__item features__item&#45;&#45;discounts">-->
-        <!--<p class="features__caption">Скидки 50%</p>-->
-        <!--<img class="features__image" src=img/decorative/icon-4.svg width="59" height="72" alt="Иконка скидки">-->
-        <!--<a class="features__link" href="#">На 350 товаров</a>-->
-      <!--</li>-->
-      <!--<li class="features__item features__item&#45;&#45;delivery">-->
-        <!--<p class="features__caption">Доставка</p>-->
-        <!--<img class="features__image" src=img/decorative/icon-5.svg width="78" height="63" alt="Иконка доставки">-->
-        <!--<a class="features__link" href="#">Бесплатно</a>-->
-      <!--</li>-->
+      <li class="features__list-item-left">
+        <ul class="features__slider-list">
+          <li class="features__slider-item">
+            <div class="features__slider-image">
+              <img src="img/content/slider-1.jpg" width="550" height="220" alt="Изображение перфоратора">
+            </div>
+            <h3 class="features__slider-caption">Перфораторы</h3>
+            <p class="features__slider-description">Настоящие мужские игрушки</p>
+            <a class="features__slider-link" href="catalog.html">Открыть каталог</a>
+          </li>
+          <li class="features__slider-item">
+            <div class="features__slider-image">
+              <img src="img/content/slider-2.jpg" width="550" height="220" alt="Изображение дрели">
+            </div>
+            <h3 class="features__slider-caption">Дрели</h3>
+            <p class="features__slider-description">Соседям на радость!</p>
+            <a class="features__slider-link" href="catalog.html">Открыть каталог</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="features__list-item-right">
+        <ul class="features__list-inner">
+          <li class="features__item features__item--discounts">
+            <p class="features__caption">Скидки 50%</p>
+            <img class="features__image" src=img/decorative/icon-4.svg width="59" height="72" alt="Иконка скидки">
+            <a class="features__link" href="#">На 350 товаров</a>
+          </li>
+          <li class="features__item features__item--delivery">
+            <p class="features__caption">Доставка</p>
+            <img class="features__image" src=img/decorative/icon-5.svg width="78" height="63" alt="Иконка доставки">
+            <a class="features__link" href="#">Бесплатно</a>
+          </li>
+        </ul>
+      </li>
     </ul>
+  </section>
+
+  <section class="popular-products">
+    <div class="popular-products__inner">
+      <h2 class="popular-products__title">Популярные товары:</h2>
+      <a class="popular-products__link" href="#">Все популярные товары</a>
+    </div>
+
+    <ul class="popular-products__list">
+      <li class="popular-products__item">
+        <section class="product">
+          <a href="catalog.html">
+            <div class="product__image">
+              <img src="img/content/products/bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 9000">
+            </div>
+          </a>
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <p class="product__model">BFG 9000</p>
+          <p class="product__old-price">32500 Р.</p>
+          <a class="product__link" href="catalog.html">25500 Р.</a>
+        </section>
+      </li>
+      <li class="popular-products__item">
+        <section class="product">
+          <a href="catalog.html">
+            <div class="product__image">
+              <img src="img/content/products/bfg-3000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 3000">
+            </div>
+          </a>
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <p class="product__model">BFG 3000</p>
+          <p class="product__old-price">22500 Р.</p>
+          <a class="product__link" href="catalog.html">15500 Р.</a>
+        </section>
+      </li>
+      <li class="popular-products__item">
+        <section class="product">
+          <a href="catalog.html">
+            <div class="product__image">
+              <img src="img/content/products/bfg-6000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 6000">
+            </div>
+          </a>
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <p class="product__model">BFG 6000</p>
+          <p class="product__old-price">30500 Р.</p>
+          <a class="product__link" href="catalog.html">25500 Р.</a>
+        </section>
+      </li>
+      <li class="popular-products__item">
+        <section class="product product--new">
+          <a href="catalog.html">
+            <div class="product__image">
+              <img src="img/content/products/bfg-2000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 2000">
+            </div>
+          </a>
+          <h3 class="product__title">Перфоратор BOSH</h3>
+          <p class="product__model">BFG 2000</p>
+          <p class="product__old-price product__old-price--hidden">12500 Р.</p>
+          <a class="product__link" href="catalog.html">12500 Р.</a>
+        </section>
+      </li>
+    </ul>
+  </section>
+
+  <section class="popular-manufacturer">
+    <div class="popular-manufacturer__inner">
+      <h2 class="popular-manufacturer__title">Популярные производители:</h2>
+      <a class="popular-manufacturer__link" href="#">Все производители</a>
+    </div>
+
+    <ul class="popular-manufacturer__list">
+      <li class="popular-manufacturer__item">
+        <a href="catalog.html">
+          <figure class="popular-manufacturer__fig">
+            <img src="img/content/manufacturers/bosch.png" width="210" height="135" alt="Bosh">
+            <!--<figcaption class="popular-manufacturer__title popular-manufacturer__title&#45;&#45;hidden">Bosh</figcaption>-->
+          </figure>
+        </a>
+      </li>
+      <li class="popular-manufacturer__item">
+        <a href="catalog.html">
+          <figure class="popular-manufacturer__fig">
+            <img src="img/content/manufacturers/Makita.png" width="210" height="135" alt="Makita">
+            <!--<figcaption class="popular-manufacturer__title popular-manufacturer__title&#45;&#45;hidden">Makita</figcaption>-->
+          </figure>
+        </a>
+      </li>
+      <li class="popular-manufacturer__item">
+        <a href="catalog.html">
+          <figure class="popular-manufacturer__fig">
+            <img src="img/content/manufacturers/DeWALT.png" width="210" height="135" alt="DeWALT">
+            <!--<figcaption class="popular-manufacturer__title popular-manufacturer__title&#45;&#45;hidden">DeWALT</figcaption>-->
+          </figure>
+        </a>
+      </li>
+      <li class="popular-manufacturer__item">
+        <a href="catalog.html">
+          <figure class="popular-manufacturer__fig">
+            <img src="img/content/manufacturers/Interscol.png" width="210" height="135" alt="Интерскол">
+            <!--<figcaption class="popular-manufacturer__title popular-manufacturer__title&#45;&#45;hidden">Интерскол</figcaption>-->
+          </figure>
+        </a>
+      </li>
+      <li class="popular-manufacturer__item">
+        <a href="catalog.html">
+          <figure class="popular-manufacturer__fig">
+            <img src="img/content/manufacturers/Hitachi.png" width="210" height="135" alt="Hitachi">
+            <!--<figcaption class="popular-manufacturer__title popular-manufacturer__title&#45;&#45;hidden">Hitachi</figcaption>-->
+          </figure>
+        </a>
+      </li>
+      <li class="popular-manufacturer__item">
+        <a href="catalog.html">
+          <figure class="popular-manufacturer__fig">
+            <img src="img/content/manufacturers/LG.png" width="210" height="135" alt="LG">
+            <!--<figcaption class="popular-manufacturer__title popular-manufacturer__title&#45;&#45;hidden">LG</figcaption>-->
+          </figure>
+        </a>
+      </li>
+      <li class="popular-manufacturer__item">
+        <a href="catalog.html">
+          <figure class="popular-manufacturer__fig">
+            <img src="img/content/manufacturers/AEG.png" width="210" height="135" alt="AEG">
+            <!--<figcaption class="popular-manufacturer__title popular-manufacturer__title&#45;&#45;hidden">AEG</figcaption>-->
+          </figure>
+        </a>
+      </li>
+      <li class="popular-manufacturer__item">
+        <a href="catalog.html">
+          <figure class="popular-manufacturer__fig">
+            <img src="img/content/manufacturers/Metabo.png" width="210" height="135" alt="Metabo">
+            <!--<figcaption class="popular-manufacturer__title popular-manufacturer__title&#45;&#45;hidden">Metabo</figcaption>-->
+          </figure>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="services">
   </section>
 
 </main>
