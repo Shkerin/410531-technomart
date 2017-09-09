@@ -1550,6 +1550,8 @@ body {
   top: 120px;
   left: 50%;
 
+  display: none;
+
   width: 620px;
   min-height: 429px;
   margin-left: -310px;
@@ -1683,4 +1685,35 @@ body {
 
 .modal-login__btn-close::after {
   transform: rotate(-45deg);
+}
+
+
+.modal-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  display: none;
+
+  width: 940px;
+  height: 445px;
+  margin-top: -315px;
+  margin-left: -480px;
+
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.75);
+
+  overflow: hidden;
+}
+
+.modal-map__img {
+  position: relative;
+  top: -15px;
+  left: -15px;
+
+  width: 970px;
+  height: 476px;
+}
+
+.modal-map p {
+  margin: 0;
 }
