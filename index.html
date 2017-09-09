@@ -80,7 +80,8 @@
 
       <ul class="header__user-ident-list">
         <li class="header__user-ident-item">
-          <svg class="header__user-ident-img" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+          <svg class="header__user-ident-img" xmlns="http://www.w3.org/2000/svg" width="20" height="17"
+               viewBox="0 0 20 17">
             <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
             <path fill="#c5c5c5"
                   d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81
@@ -528,6 +529,35 @@
   </div>
 
 </footer>
+
+<section class="modal-login">
+  <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label class="modal-login__label" for="name-user">Ваше имя:</label>
+      <input class="modal-login__input" id="name-user" type="text" placeholder="Представьтесь, пожалуйста">
+    </p>
+    <p>
+      <label class="modal-login__label" for="email-user">Ваш e-mail:</label>
+      <input class="modal-login__input" id="email-user" type="email" placeholder="Для отправки ответа">
+    </p>
+    <p>
+      <label class="modal-login__label" for="letter-user">Текст письма:</label>
+      <textarea class="modal-login__textarea" id="letter-user" name="text" cols="30" rows="5"
+                placeholder="В свободной форме"></textarea>
+    </p>
+    <div class="modal-login__wrapper-bottom">
+      <button class="modal-login__btn-submit" type="submit">Отправить</button>
+    </div>
+  </form>
+  <button class="modal-login__btn-close" type="button">Закрыть</button>
+</section>
+
+<section class="modal-map">
+  <p>
+    <img src="img/content/popup-map-1.jpg" alt="Карта офиса" class="modal-map__image">
+  </p>
+  <button class="modal-map__btn-close" type="button">Закрыть</button>
+</section>
 
 </body>
 </html>
