@@ -321,6 +321,21 @@ body {
   list-style: none;
 }
 
+.header__user-authorization {
+  margin: 0;
+  margin-top: 13px;
+  margin-left: 70px;
+  padding: 0;
+}
+
+.header__user-orders,
+.header__user-office {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
 .header__user-ident-item:first-child {
   position: relative;
 }
