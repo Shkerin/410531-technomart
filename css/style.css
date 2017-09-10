@@ -1299,6 +1299,8 @@ body {
 
 .breadcrumbs-item {
   display: inline-block;
+
+  vertical-align: top;
 }
 
 .breadcrumbs-link {
