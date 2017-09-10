@@ -1546,7 +1546,7 @@ body {
 /* --- Popup forms --- */
 
 .modal-login,
-.modal-login-catalog {
+.modal-cart {
   position: fixed;
   top: 120px;
   left: 50%;
@@ -1562,7 +1562,7 @@ body {
 }
 
 .modal-login::after,
-.modal-login-catalog::after {
+.modal-cart::after {
   content: "";
 
   position: absolute;
@@ -1635,6 +1635,8 @@ body {
 .modal-login__btn-submit {
   margin: 0;
   padding: 0;
+
+  cursor: pointer;
 }
 
 .modal-login__btn-submit {
@@ -1690,31 +1692,6 @@ body {
   transform: rotate(-45deg);
 }
 
-.modal-login-catalog {
-  min-height: 90px;
-}
-
-.modal-login-catalog .modal-login__wrapper-top {
-  min-height: 90px;
-}
-
-.modal-login-catalog .modal-login__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.modal-login-catalog span {
-  margin-right: 50px;
-
-  font-size: 30px;
-  line-height: 18px;
-}
-
-.modal-login-catalog .modal-login__btn-submit {
-  width: 220px;
-}
-
 .modal-map {
   position: fixed;
   top: 50%;
@@ -1743,4 +1720,29 @@ body {
 
 .modal-map p {
   margin: 0;
+}
+
+.modal-cart {
+  min-height: 90px;
+}
+
+.modal-cart .modal-login__wrapper-top {
+  min-height: 90px;
+}
+
+.modal-cart .modal-login__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-cart span {
+  margin-right: 50px;
+
+  font-size: 30px;
+  line-height: 18px;
+}
+
+.modal-cart .modal-login__btn-submit {
+  width: 220px;
 }
