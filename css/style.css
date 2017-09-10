@@ -1004,7 +1004,8 @@ body {
 
   background-color: #3d546e;
   border: none;
-  box-shadow: inset 0 1px 0 0 #405069,
+  box-shadow:
+  inset 0 1px 0 0 #405069,
   0 1px 0 0 #293449;
 }
 
@@ -1013,7 +1014,8 @@ body {
   color: #ffffff;
 
   background-color: #32425c;
-  box-shadow: inset 0 1px 0 0 #405069,
+  box-shadow:
+  inset 0 1px 0 0 #405069,
   0 1px 0 0 #293449;
 }
 
@@ -1021,7 +1023,8 @@ body {
   color: #3d546e;
 
   background-color: #ffffff;
-  box-shadow: inset 0 1px 0 0 #ffffff,
+  box-shadow:
+  inset 0 1px 0 0 #ffffff,
   0 1px 0 0 #ffffff;
 }
 
@@ -1040,6 +1043,14 @@ body {
   padding: 0;
 
   list-style: none;
+}
+
+.services__list-item {
+  display: none;
+}
+
+.services__list-item:first-child {
+  display: block;
 }
 
 .services__list-title {
