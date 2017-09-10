@@ -847,7 +847,13 @@ body {
 }
 
 .popular-products__item {
+  position: relative;
+
   width: 218px;
+}
+
+.products-list__item {
+  position: relative;
 }
 
 .product {
@@ -858,6 +864,20 @@ body {
   line-height: 20px;
   color: inherit;
   text-align: center;
+}
+
+.product--new::after {
+  position:absolute;
+  top:-1px;
+  right:-1px;
+  width:60px;
+  height:60px;
+
+  content: "";
+  text-indent:-1000px;
+  overflow:hidden;
+  z-index:20;
+  background:url("../img/content/new-flag.png") no-repeat 0 0;
 }
 
 .product__title {
@@ -876,13 +896,13 @@ body {
   margin: 0;
 }
 
-.product__old-price,
+.product__discount,
 .product__link {
   font-size: 17px;
   line-height: 18px;
 }
 
-.product__old-price {
+.product__discount {
   margin: 0;
 
   color: #a9a9a9;
