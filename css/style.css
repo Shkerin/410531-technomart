@@ -1543,9 +1543,10 @@ body {
   color: #000000;
 }
 
-/* --- Popup form --- */
+/* --- Popup forms --- */
 
-.modal-login {
+.modal-login,
+.modal-login-catalog {
   position: fixed;
   top: 120px;
   left: 50%;
@@ -1560,7 +1561,8 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
-.modal-login::after {
+.modal-login::after,
+.modal-login-catalog::after {
   content: "";
 
   position: absolute;
@@ -1647,6 +1649,7 @@ body {
 
   background-color: #ff5357;
   border: none;
+  border-radius: 3px;
 }
 
 .modal-login__btn-close {
@@ -1687,6 +1690,30 @@ body {
   transform: rotate(-45deg);
 }
 
+.modal-login-catalog {
+  min-height: 90px;
+}
+
+.modal-login-catalog .modal-login__wrapper-top {
+  min-height: 90px;
+}
+
+.modal-login-catalog .modal-login__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-login-catalog span {
+  margin-right: 50px;
+
+  font-size: 30px;
+  line-height: 18px;
+}
+
+.modal-login-catalog .modal-login__btn-submit {
+  width: 220px;
+}
 
 .modal-map {
   position: fixed;
