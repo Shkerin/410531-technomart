@@ -1535,7 +1535,7 @@ body {
 }
 
 .catalog__filter-legend {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -1619,10 +1619,6 @@ body {
   border: none;
 }
 
-.catalog__filter-item {
-  padding-bottom: 15px;
-}
-
 .catalog__filter-list {
   margin: 0;
   padding: 0;
@@ -1630,15 +1626,98 @@ body {
   list-style: none;
 }
 
-.label-checkbox,
+.catalog__filter-item {
+  margin-bottom: 17px;
+}
+
+.checkbox,
 .label-radio {
+  display: block;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
-.label-checkbox--disabled,
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__box {
+  position: relative;
+
+  float: left;
+  width: 19px;
+  height: 19px;
+
+  border: 2px solid #c5c5c5;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.checkbox:hover .checkbox__box,
+.checkbox:focus .checkbox__box {
+  border: 2px solid #b5b5b5;
+}
+
+.checkbox__input--checked + .checkbox__box::before,
+.checkbox__input--checked + .checkbox__box::after {
+  content: "";
+
+  position: absolute;
+
+  background-color: #c5c5c5;
+  border-radius: 1px;
+}
+
+
+.checkbox__input--checked + .checkbox__box::before {
+  top: 9px;
+  left: 2px;
+
+  width: 11px;
+  height: 4px;
+}
+
+.checkbox__input--checked + .checkbox__box::after {
+  top: 5px;
+  left: 8px;
+
+  width: 17px;
+  height: 4px;
+
+  box-shadow:
+    2px -2px 0 0 #ffffff,
+    2px 2px 0 0 #ffffff;
+}
+
+.checkbox__input--checked + .checkbox__box::before {
+  transform: rotate(45deg);
+}
+
+.checkbox__input--checked + .checkbox__box::after {
+  transform: rotate(-45deg);
+}
+
+.checkbox:hover .checkbox__box::before,
+.checkbox:focus .checkbox__box::before,
+.checkbox:hover .checkbox__box::after,
+.checkbox:focus .checkbox__box::after {
+  background-color: #b5b5b5;
+}
+
+.checkbox__text {
+  display: block;
+  padding-top: 2px;
+  padding-left: 11px;
+
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.checkbox--disabled,
 .label-radio--disabled {
   color: rgba(0, 0, 0, 0.4);
 }
