@@ -578,17 +578,22 @@
 <section class="modal-map">
   <h2 class="modal-map--hidden">Модальное окно карты</h2>
   <p>
-    <img class="modal-map__img" src="img/content/popup-map-1.jpg" width="970" height="476"
-         alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербуг">
+    <a class="modal-map__image-link" href="https://yandex.ru/maps/-/CBUjzIFTtD">
+      <img class="modal-map__img" src="img/content/popup-map-1.jpg" width="970" height="476"
+           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербуг">
+    </a>
   </p>
   <button class="modal-map__btn-close" type="button">Закрыть</button>
 </section>
 
 <script>
   var link = document.querySelector(".contacts__link");
+  var mapLink = document.querySelector(".contacts__image-link");
 
   var popup = document.querySelector(".modal-write-us");
   var close = document.querySelector(".modal-write-us__btn-close");
+  var mapPopup = document.querySelector(".modal-map");
+  var mapClose = document.querySelector(".modal-map__btn-close");
 
   var form = popup.querySelector("form");
   var login = popup.querySelector("[name=login]");
@@ -596,10 +601,28 @@
 
   var storage = localStorage.getItem("login");
 
+  function modalShow(obj) {
+    obj.classList.remove("modal-hidden");
+    obj.classList.add("modal-show");
+  }
+
+  function modalHidden(obj) {
+    obj.classList.add("modal-hidden");
+    obj.classList.remove("modal-error");
+    setTimeout(function () {
+      obj.classList.remove("modal-show");
+    }, 270);
+  }
+
+  function modalError(obj) {
+    obj.classList.remove("modal-error");
+    obj.offsetWidth = obj.offsetWidth;
+    obj.classList.add("modal-error");
+  }
+
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    popup.classList.remove("modal-hidden");
-    popup.classList.add("modal-show");
+    modalShow(popup);
 
     if (storage) {
       login.value = storage;
@@ -609,37 +632,41 @@
     }
   });
 
+  mapLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    modalShow(mapPopup);
+  });
+
   close.addEventListener("click", function (e) {
     e.preventDefault();
-    animationHiddenPopup();
+    modalHidden(popup);
+  });
+
+  mapClose.addEventListener("click", function (e) {
+    e.preventDefault();
+    modalHidden(mapPopup);
   });
 
   form.addEventListener("submit", function (e) {
     if (!login.value || !email.value) {
       e.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
+      modalError(popup);
     } else {
       localStorage.setItem("login", login.value);
     }
   });
 
   window.addEventListener("keydown", function (e) {
-    if (e.keyCode === 27 &&
-      popup.classList.contains("modal-show")) {
-      animationHiddenPopup();
+    if (e.keyCode === 27) {
+      console.log('keyCode === 27');
+      if (popup.classList.contains("modal-show")) {
+        modalHidden(popup);
+      }
+      if (mapPopup.classList.contains("modal-show")) {
+        modalHidden(mapPopup);
+      }
     }
-  })
-  ;
-
-  function animationHiddenPopup() {
-    popup.classList.add("modal-hidden");
-    popup.classList.remove("modal-error");
-    setTimeout(function () {
-      popup.classList.remove("modal-show");
-    }, 270);
-  }
+  });
 </script>
 
 </body>
