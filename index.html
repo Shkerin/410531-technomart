@@ -542,37 +542,37 @@
 
 </footer>
 
-<section class="modal-login">
-  <h2 class="modal-login--hidden">Модальное окно регистрации</h2>
-  <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="modal-login__wrapper-top">
-      <div class="modal-login__container">
-        <div class="modal-login__inner">
+<section class="modal-write-us">
+  <h2 class="modal-write-us--hidden">Модальное окно регистрации</h2>
+  <form class="modal-write-us__form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="modal-write-us__wrapper-top">
+      <div class="modal-write-us__container">
+        <div class="modal-write-us__inner">
           <p>
-            <label class="modal-login__label" for="user-login">Ваше имя:</label>
-            <input class="modal-login__input" id="user-login" type="text" name="login"
+            <label class="modal-write-us__label" for="user-login">Ваше имя:</label>
+            <input class="modal-write-us__input" id="user-login" type="text" name="login"
                    placeholder="Представьтесь, пожалуйста">
           </p>
           <p>
-            <label class="modal-login__label" for="user-email">Ваш e-mail:</label>
-            <input class="modal-login__input" id="user-email" type="email" name="email"
+            <label class="modal-write-us__label" for="user-email">Ваш e-mail:</label>
+            <input class="modal-write-us__input" id="user-email" type="email" name="email"
                    placeholder="Для отправки ответа">
           </p>
         </div>
         <p>
-          <label class="modal-login__label" for="user-letter">Текст письма:</label>
-          <textarea class="modal-login__textarea" id="user-letter" name="letter" cols="30" rows="5"
+          <label class="modal-write-us__label" for="user-letter">Текст письма:</label>
+          <textarea class="modal-write-us__textarea" id="user-letter" name="letter" cols="30" rows="5"
                     placeholder="В свободной форме"></textarea>
         </p>
       </div>
     </div>
-    <div class="modal-login__wrapper-bottom">
-      <div class="modal-login__container">
-        <button class="modal-login__btn-submit" type="submit">Отправить</button>
+    <div class="modal-write-us__wrapper-bottom">
+      <div class="modal-write-us__container">
+        <button class="modal-write-us__btn-submit" type="submit">Отправить</button>
       </div>
     </div>
   </form>
-  <button class="modal-login__btn-close" type="button">Закрыть</button>
+  <button class="modal-write-us__btn-close" type="button">Закрыть</button>
 </section>
 
 <section class="modal-map">
@@ -581,8 +581,66 @@
     <img class="modal-map__img" src="img/content/popup-map-1.jpg" width="970" height="476"
          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербуг">
   </p>
-  <button class="modal-login__btn-close" type="button">Закрыть</button>
+  <button class="modal-map__btn-close" type="button">Закрыть</button>
 </section>
+
+<script>
+  var link = document.querySelector(".contacts__link");
+
+  var popup = document.querySelector(".modal-write-us");
+  var close = document.querySelector(".modal-write-us__btn-close");
+
+  var form = popup.querySelector("form");
+  var login = popup.querySelector("[name=login]");
+  var email = popup.querySelector("[name=email]");
+
+  var storage = localStorage.getItem("login");
+
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    popup.classList.remove("modal-hidden");
+    popup.classList.add("modal-show");
+
+    if (storage) {
+      login.value = storage;
+      email.focus();
+    } else {
+      login.focus();
+    }
+  });
+
+  close.addEventListener("click", function (e) {
+    e.preventDefault();
+    animationHiddenPopup();
+  });
+
+  form.addEventListener("submit", function (e) {
+    if (!login.value || !email.value) {
+      e.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+    } else {
+      localStorage.setItem("login", login.value);
+    }
+  });
+
+  window.addEventListener("keydown", function (e) {
+    if (e.keyCode === 27 &&
+      popup.classList.contains("modal-show")) {
+      animationHiddenPopup();
+    }
+  })
+  ;
+
+  function animationHiddenPopup() {
+    popup.classList.add("modal-hidden");
+    popup.classList.remove("modal-error");
+    setTimeout(function () {
+      popup.classList.remove("modal-show");
+    }, 270);
+  }
+</script>
 
 </body>
 </html>

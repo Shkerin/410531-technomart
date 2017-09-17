@@ -1964,14 +1964,63 @@ body {
 
 /* --- Popup forms --- */
 
-.modal-login,
+@keyframes increase-scale {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes reduce-scale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  50%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  30%,
+  70% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-write-us,
 .modal-cart {
   position: fixed;
   top: 120px;
   left: 50%;
 
   display: none;
-
   width: 620px;
   min-height: 429px;
   margin-left: -310px;
@@ -1980,7 +2029,21 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
-.modal-login::after,
+.modal-show {
+  display: block;
+
+  animation: increase-scale 0.3s;
+}
+
+.modal-hidden {
+  animation: reduce-scale 0.3s;
+}
+
+.modal-error {
+  animation: shake 0.4s;
+}
+
+.modal-write-us::after,
 .modal-cart::after {
   content: "";
 
@@ -1992,36 +2055,36 @@ body {
   background-color: #ff5257;
 }
 
-.modal-login__wrapper-top {
+.modal-write-us__wrapper-top {
   min-height: 226px;
   padding-top: 54px;
   padding-bottom: 30px;
 }
 
-.modal-login__wrapper-bottom {
+.modal-write-us__wrapper-bottom {
   min-height: 112px;
 
   background-color: #f4f4f4;
 }
 
-.modal-login__container {
+.modal-write-us__container {
   margin: 0;
   padding: 0 79px;
 }
 
-.modal-login__inner {
+.modal-write-us__inner {
   display: flex;
   justify-content: space-between;
 
   margin-bottom: 20px;
 }
 
-.modal-login__form p {
+.modal-write-us__form p {
   margin: 0;
   padding: 0;
 }
 
-.modal-login__label {
+.modal-write-us__label {
   display: block;
   margin-bottom: 10px;
 
@@ -2030,7 +2093,7 @@ body {
   line-height: 18px;
 }
 
-.modal-login__input {
+.modal-write-us__input {
   width: 195px;
   margin: 0;
   padding: 10px 11px;
@@ -2039,7 +2102,7 @@ body {
   border-radius: 2px;
 }
 
-.modal-login__textarea {
+.modal-write-us__textarea {
   width: 436px;
   max-width: 436px;
   height: 86px;
@@ -2051,7 +2114,7 @@ body {
   border-radius: 2px;
 }
 
-.modal-login__btn-submit {
+.modal-write-us__btn-submit {
   width: 460px;
   height: 37px;
   margin: 0;
@@ -2069,7 +2132,7 @@ body {
   cursor: pointer;
 }
 
-.modal-login__btn-close {
+.modal-write-us__btn-close {
   position: absolute;
   top: 14px;
   right: 9px;
@@ -2085,8 +2148,8 @@ body {
   cursor: pointer;
 }
 
-.modal-login__btn-close::before,
-.modal-login__btn-close::after {
+.modal-write-us__btn-close::before,
+.modal-write-us__btn-close::after {
   content: "";
 
   position: absolute;
@@ -2099,11 +2162,11 @@ body {
   background-color: #ee3643;
 }
 
-.modal-login__btn-close::before {
+.modal-write-us__btn-close::before {
   transform: rotate(45deg);
 }
 
-.modal-login__btn-close::after {
+.modal-write-us__btn-close::after {
   transform: rotate(-45deg);
 }
 
@@ -2113,7 +2176,6 @@ body {
   left: 50%;
 
   display: none;
-
   width: 940px;
   height: 445px;
   margin-top: -315px;
@@ -2141,11 +2203,11 @@ body {
   min-height: 90px;
 }
 
-.modal-cart .modal-login__wrapper-top {
+.modal-cart .modal-write-us__wrapper-top {
   min-height: 90px;
 }
 
-.modal-cart .modal-login__container {
+.modal-cart .modal-write-us__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2158,6 +2220,6 @@ body {
   line-height: 18px;
 }
 
-.modal-cart .modal-login__btn-submit {
+.modal-cart .modal-write-us__btn-submit {
   width: 220px;
 }
