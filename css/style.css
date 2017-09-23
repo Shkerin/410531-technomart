@@ -1677,7 +1677,9 @@ body {
 }
 
 .checkbox__input--checked + .checkbox__box::before,
-.checkbox__input--checked + .checkbox__box::after {
+.checkbox__input--checked + .checkbox__box::after,
+.checkbox__input:checked + .checkbox__box::before,
+.checkbox__input:checked + .checkbox__box::after {
   content: "";
 
   position: absolute;
@@ -1686,15 +1688,19 @@ body {
   border-radius: 1px;
 }
 
-.checkbox__input--checked + .checkbox__box::before {
+.checkbox__input--checked + .checkbox__box::before,
+.checkbox__input:checked + .checkbox__box::before {
   top: 9px;
   left: 2px;
 
   width: 11px;
   height: 4px;
+
+  transform: rotate(45deg);
 }
 
-.checkbox__input--checked + .checkbox__box::after {
+.checkbox__input--checked + .checkbox__box::after,
+.checkbox__input:checked + .checkbox__box::after {
   top: 5px;
   left: 8px;
 
@@ -1704,14 +1710,13 @@ body {
   box-shadow:
     2px -2px 0 0 #ffffff,
     2px 2px 0 0 #ffffff;
-}
 
-.checkbox__input--checked + .checkbox__box::before {
-  transform: rotate(45deg);
-}
-
-.checkbox__input--checked + .checkbox__box::after {
   transform: rotate(-45deg);
+}
+
+.checkbox__input:not(:checked) + .checkbox__box::before,
+.checkbox__input:not(:checked) + .checkbox__box::after {
+  display: none;
 }
 
 .checkbox:hover .checkbox__box::before,
@@ -1765,7 +1770,8 @@ body {
   border: 4px solid #e9e9e9;
 }
 
-.radio__input--checked + .radio__box::before {
+.radio__input--checked + .radio__box::before,
+.radio__input:checked + .radio__box::before {
   content: "";
 
   position: absolute;
@@ -1776,6 +1782,10 @@ body {
 
   background-color: #c5c5c5;
   border-radius: 50%;
+}
+
+.radio__input:not(:checked) + .radio__box::before {
+  display: none;
 }
 
 .radio:hover .radio__box::before,
@@ -1967,11 +1977,7 @@ body {
 @keyframes increase-scale {
   0% {
     transform: scale(0.8);
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0.5;
+    opacity: 0.6;
   }
 
   100% {
@@ -1986,9 +1992,9 @@ body {
     opacity: 1;
   }
 
-  50% {
-    opacity: 0.5;
-  }
+  /*50% {*/
+    /*opacity: 0.5;*/
+  /*}*/
 
   100% {
     transform: scale(0.8);
