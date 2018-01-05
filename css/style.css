@@ -50,6 +50,11 @@
    Global styles
    ========================================================================== */
 
+html,
+body {
+  min-width: 1200px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -84,11 +89,6 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-html,
-body {
-  min-width: 1200px;
 }
 
 
